@@ -1,3 +1,4 @@
+
 # cluRC
 Clustering with relational constraint
 
@@ -13,7 +14,7 @@ In clustering with a relational constraint, we aim to find a clustering / partit
 $$P(\mathbf{C}^*) = \min_{\mathbf{C} \in \Phi} P(\mathbf{C}) .$$ 
 A more complex criterion function $P(\mathbf{C}) = \sum_{C_1, C_2 \in \mathbf{C}} q(C_1, C_2)$ is used in blockmodeling [6,5]. We can also cluster the links of a network [3].
 
-\centerline{\includegraphics[width=120mm,viewport=80 70 1050 680,clip]{cut50_20.pdf}}
+<img width="1122" height="690" alt="cut50_20" src="https://github.com/user-attachments/assets/5379427b-7ba1-47e8-a103-428e83a973f6" />
 
 A typical example of tolerant clustering with a relational constraint is the regionalization problem, in which we combine basic administrative geographical units into a smaller number of clusters or regions composed of similar and geographically connected units. 
 
