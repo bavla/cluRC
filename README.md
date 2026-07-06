@@ -49,5 +49,5 @@ Ferligoj, A., Batagelj, V.: Clustering with relational constraint. Psychometrika
 Ferligoj, A., Batagelj, V.: Some types of clustering with relational constraints. Psychometrika 48(4),  541--552 (1983).
 
 [9]
-cluRC  repository, \url{https://github.com/bavla/cluRC}, last accessed 2026/1/18.
+cluRC  repository, https://github.com/bavla/cluRC , last accessed 2026/1/18.
 
