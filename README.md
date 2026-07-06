@@ -1,11 +1,11 @@
 # cluRC
 Clustering with relational constraint
 
-  * [cluRC 2018 version](./2018.md)
   * [cluRc 2026 based on igraph](./igraph/README.md)
   * [IFCS 2026](./ifcs26/README.md)
   * [cluRC datasets](./data/README.md)
   * [cluRC documents](./doc/README.md)
+  * [cluRC 2018 version](./2018.md)
 
 Let $U$ be a set of units, each measured on several properties (attributes) $A$, from which we can compute the dissimilarity $d$ between pairs of units. We also have a relation $R$ on $U$ that indicates the compatibility of units. This defines a network $N = (U, R, A, d)$, with $U$ as the set of nodes,  $R$ as the set of links, and $d$ as the weight on links.
 
