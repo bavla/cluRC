@@ -1,7 +1,7 @@
 # cluRC
 Clustering with relational constraint
 
-  * [cluRC 2018 version]("./2018.md)
+  * [cluRC 2018 version](./2018.md)
   * 
 ## Classical agglomerative clustering
 http://vladowiki.fmf.uni-lj.si/doku.php?id=pro:relc:org
