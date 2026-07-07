@@ -1,6 +1,6 @@
 # US
 
-In preparation
+<img src="https://github.com/bavla/Nets/blob/master/netsWeight/workIP.jpg"  />
 
 http://vladowiki.fmf.uni-lj.si/doku.php?id=notes:clu:counties:index
 
