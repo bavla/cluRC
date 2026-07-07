@@ -4,7 +4,7 @@ source("https://raw.githubusercontent.com/bavla/cluRC/refs/heads/master/igraph/c
 
 
 ## varCutree(R,var,vmin,vmax) 
-https://github.com/bavla/cluRC/blob/master/igraph/exdist.md#varcutree
+
 [Example](./exdist.md#varcutree)
 
 ## cluRCdist(N,D,method="max",strategy="tolerant")
