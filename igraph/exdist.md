@@ -5,7 +5,7 @@ http://vladowiki.fmf.uni-lj.si/doku.php?id=notes:clu:cluster
 ```
 > setwd("C:/data/italy")  # use your working directory
 > source("https://raw.githubusercontent.com/bavla/cluRC/refs/heads/master/igraph/cluRC.R")
-> library(igraph); library(sf); library(tmap); library(spdep); library(pals)
+> library(igraph); library(sf); library(tmap); library(spdep); library(pals); library(paletteer)
 > source("./cluRCdist.R")
 > N <- readRDS(file=url("https://github.com/bavla/cluRC/raw/refs/heads/master/data/IT/ItalyBESsel22.rds"))
 > U <- readRDS(file=url("https://github.com/bavla/cluRC/raw/refs/heads/master/data/IT/BES22selStd.rds"))
@@ -41,8 +41,21 @@ rc
 <img width="778" alt="ITdistC" src="https://github.com/user-attachments/assets/3e140f6d-dc88-422d-b77a-3ee11d2d9306" />
  
 ```
- 
+> r$height <- R
+> rC <- varCutree(r,rep(1,107),2,30)
+> table(rC$part)
+ 0  1  2  3  4  5  6  7 
+ 5 10 29 19 25 14  3  2 
+> P$Clustering <- rC$part
+> # cols <- c("darkred",as.vector(cols25(25))) 
+> cols <- c("darkred",as.vector(paletteer_d("RColorBrewer::Set2")))
+> tm_shape(P) +
++   tm_polygons("Clustering",tm_scale_categorical(values=cols),
++   fill.legend = tm_legend(position = tm_pos_in("right", "top")) ) +
++   tm_title_out("BES 2022 / RC dis: tolerant max / var count 2-30",
++     position = tm_pos_out("center", "top")) 
 ```
+<img width="796" alt="ITdistVC30" src="https://github.com/user-attachments/assets/4ec62ee8-a521-4da0-8c6a-b8d7431f1f4d" />
  
 ```
  
