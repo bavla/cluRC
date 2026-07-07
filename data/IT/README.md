@@ -1,6 +1,6 @@
 # Italian provinces
 
-  - [Italian provinces map](ipmap.md)
+  - [Italian provinces by region map](ipmap.md)
 
 ```
  
