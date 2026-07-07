@@ -48,9 +48,15 @@ j 3 4 5 3 7 7 2 4 5
 
 <img width="476"  alt="SomeTyNet" src="https://github.com/user-attachments/assets/17ed97cf-c418-4247-a06a-3266f27aeb53" />
 
+## Apply the strategies
+
+### tolerant
 
 ```
- 
+
+> N <- readRDS(file="SomeTyNet.rds"); D <- readRDS(file="SomeTyDis.rds")
+
+
 ```
  
 ```
