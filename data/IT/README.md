@@ -1,5 +1,6 @@
 # Italian provinces
 
+S <- scale(T[,4:24])
 
 ```
  
