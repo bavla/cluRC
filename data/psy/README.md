@@ -1,5 +1,11 @@
 # Psychometrika
 
+Data of the example from the paper  
+
+A. Ferligoj, V. Batagelj: Some types of clustering with relational constraints. Psychometrika 48(1983)4, 541-552.
+
+are available on the files [SomeTyXY.net](https://github.com/bavla/cluRC/blob/master/SomeTyXY.net) and [SomeTy.dis](https://github.com/bavla/cluRC/blob/master/SomeTy.dis). To use them with cluRC we have to transform them into an igraph network and a distance lower triangular matrix.
+
 ## Converting data into cluRC format
 
 
