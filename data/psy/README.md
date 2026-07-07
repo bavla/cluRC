@@ -85,6 +85,7 @@ Methods: max, min, ward
 <img width="500" alt="SomeTyLdrMax" src="https://github.com/user-attachments/assets/8882e2ac-2936-4305-ba64-69ba5221759d" />
 <img width="500" alt="SomeTyStrMax" src="https://github.com/user-attachments/assets/1076e64f-76f2-4cda-af31-8e01bd679e54" />
  
+<img width="1000" alt="SomeTyClu" src="https://github.com/user-attachments/assets/9c994d69-314e-4df2-9600-12f6635e6334" />
 
  
 
