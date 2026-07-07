@@ -8,7 +8,7 @@ Clustering with relational constraint
   * [cluRC documents](./doc/README.md)
   * [cluRC 2018 version](./2018.md)
 
-A brief description of the field of **clustering with relational constraint** is given in the [abstract for the IFCS 2026 conference](./doc/).
+A brief description of the field of **clustering with relational constraint** is given in the [abstract for the IFCS 2026 conference](./doc/IFCS2026_VB_abs.pdf).
 
 Let $U$ be a set of units, each measured on several properties (attributes) $A$, from which we can compute the dissimilarity $d$ between pairs of units. We also have a relation $R$ on $U$ that indicates the compatibility of units. This defines a network $N = (U, R, A, d)$, with $U$ as the set of nodes,  $R$ as the set of links, and $d$ as the weight on links.
 
@@ -16,7 +16,7 @@ In clustering with a relational constraint, we aim to find a clustering / partit
 $$P(\mathbf{C}^*) = \min_{\mathbf{C} \in \Phi} P(\mathbf{C}) .$$ 
 A more complex criterion function $P(\mathbf{C}) = \sum_{C_1, C_2 \in \mathbf{C}} q(C_1, C_2)$ is used in blockmodeling [6,5]. We can also cluster the links of a network [3].
 
-<img width="1122" height="690" alt="cut50_20" src="https://github.com/user-attachments/assets/5379427b-7ba1-47e8-a103-428e83a973f6" />
+<img width="800" alt="cut50_20" src="https://github.com/user-attachments/assets/5379427b-7ba1-47e8-a103-428e83a973f6" />
 
 A typical example of tolerant clustering with a relational constraint is the regionalization problem, in which we combine basic administrative geographical units into a smaller number of clusters or regions composed of similar and geographically connected units. 
 
