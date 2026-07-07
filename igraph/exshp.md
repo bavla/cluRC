@@ -81,9 +81,8 @@ Link number distribution:
 ```
 
 
-{{work:data:nets:pics:italynet.png?600}}
 
-{{work:data:nets:pics:italynet.pdf|italynet.pdf}}
+<img width="447" height="519" alt="ItalyNet" src="https://github.com/user-attachments/assets/1b808c1c-6f22-49d3-a9dd-2a0d4a3fa75c" />
 
  
 ```
@@ -187,9 +186,9 @@ IGRAPH 8de3d89 UNW- 107 238 -- Italian provinces 2017-2025
 ```
 
 
-{{work:data:nets:pics:italyigraph2.png}}
 
-{{work:data:nets:pics:italyigraph2.pdf|italyigraph2.pdf}}
+<img width="830" height="822" alt="ItalyIgraph2" src="https://github.com/user-attachments/assets/c66e8574-c00d-4b92-86d7-65a42ec1ecca" />
+
 
  
 ```
@@ -203,8 +202,8 @@ IGRAPH 8de3d89 UNW- 107 238 -- Italian provinces 2017-2025
 ```
 
 
+<img width="586" height="583" alt="ItalyIgraphExt" src="https://github.com/user-attachments/assets/f6e9d8ff-252a-4616-b793-91e42cba3249" />
 
-{{work:data:nets:pics:italyigraphext.png}}
  
 ```
 ```
