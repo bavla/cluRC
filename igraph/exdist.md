@@ -21,8 +21,24 @@ Method: max   Strategy: tolerant
 <img width="1000" alt="dendroRCdTolMax" src="https://github.com/user-attachments/assets/d761c1bc-33d4-44ae-8cf8-91f7d92093e6" />
 
 ```
- 
+> rc <- cutree(r,k=16)
+> table(rc)
+rc
+ 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 
+10 29  1  2  3  1 10  9 17  1 13  1  7  1  1  1 
+> t <- table(rc)
+> rc[rc %in% which(t==1)] <- 999
+> p <- as.integer(factor(rc))
+> names(p) <- names(rc)
+> P <- st_read("./shape/prov24/ProvCM01012024_WGS84.shp")
+> P$Clustering <- p
+> tm_shape(P) +
++   tm_polygons("Clustering",tm_scale_categorical(values=as.vector(cols25(20))),
++   fill.legend = tm_legend(position = tm_pos_in("right", "top")) ) +
++   tm_title_out("BES 2022 / RC dis: tolerant max",
++     position = tm_pos_out("center", "top"))  
 ```
+<img width="778" alt="ITdistC" src="https://github.com/user-attachments/assets/3e140f6d-dc88-422d-b77a-3ee11d2d9306" />
  
 ```
  
