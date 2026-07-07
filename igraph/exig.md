@@ -43,6 +43,8 @@ AL -0.3997414  0.16456961  0.64574446 -0.04640758  0.22362536 -0.38673036 -0.906
 
  
 ```
+<img width="800" alt="dendWardFree" src="https://github.com/user-attachments/assets/76d78199-9a9a-40a2-8157-8d4d6e0650f3" />
+
 ```
  
 ```
