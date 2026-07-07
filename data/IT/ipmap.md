@@ -17,22 +17,6 @@
 
 <img width="825" height="794" alt="ITregions" src="https://github.com/user-attachments/assets/8bec775f-6b94-4a4d-ad49-c99788dd4c5c" />
 
-```
- 
-```
- 
-```
- 
-```
- 
-```
- 
-```
- 
-```
- 
-```
- 
 
 
 <hr />
