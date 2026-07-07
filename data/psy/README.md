@@ -53,11 +53,17 @@ j 3 4 5 3 7 7 2 4 5
 ### tolerant
 
 ```
-
+> source("https://raw.githubusercontent.com/bavla/cluRC/refs/heads/master/igraph/cluRC.R")
+> library(igraph)
 > N <- readRDS(file="SomeTyNet.rds"); D <- readRDS(file="SomeTyDis.rds")
-
+> # tolerant
+> r <- cluRCdist(N,D)
+> plot(r,hang=-1,main="Some types: tolerant max")
+>
 
 ```
+
+<img width="624" alt="SomeTyTolMax" src="https://github.com/user-attachments/assets/f9fd8f3b-dc69-4d6f-ac43-ab46acab00a2" />
  
 ```
  
