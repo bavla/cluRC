@@ -50,7 +50,9 @@ j 3 4 5 3 7 7 2 4 5
 
 ## Apply the strategies
 
-### tolerant
+Strategies: tolerant, leader, strict
+
+Methods: max, min, ward
 
 ```
 > source("https://raw.githubusercontent.com/bavla/cluRC/refs/heads/master/igraph/cluRC.R")
@@ -58,12 +60,15 @@ j 3 4 5 3 7 7 2 4 5
 > N <- readRDS(file="SomeTyNet.rds"); D <- readRDS(file="SomeTyDis.rds")
 > # tolerant
 > r <- cluRCdist(N,D)
-> plot(r,hang=-1,main="Some types: tolerant max")
->
+> plot(r,hang=-1,cex=1.5,main="Some types: tolerant max")
+> r <- cluRCdist(N,D,method="ward",strategy="tolerant")
+> plot(r,hang=-1,cex=1.5,main="Some types: tolerant ward")
+> 
 
 ```
 
 <img width="500" alt="SomeTyTolMax" src="https://github.com/user-attachments/assets/172a0cb7-d1f4-4d29-9e1c-c86a45ffc5d5" />
+<img width="500" alt="SomeTyTolWard" src="https://github.com/user-attachments/assets/b5328907-4740-4475-aff2-995c127da5cc" />
 
  
 ```
