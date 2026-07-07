@@ -59,7 +59,9 @@ rc
  
 ```
 > rC <- varCutree(r,V(N)$pop21,1500000,15000000)
-> table(rC$part) 
+> table(rC$part)
+ 0  1  2  3  4  5  6  7 
+ 7 10 29 19 25 14  2  1 
 > P$Clustering <- rC$part
 > cols <- c("darkred",as.vector(paletteer_d("RColorBrewer::Set2")))
 > tm_shape(P) +
@@ -71,8 +73,20 @@ rc
 <img width="789" alt="ITdistVP15M" src="https://github.com/user-attachments/assets/f6408d71-f0db-4dde-9268-c02149cd3295" />
  
 ```
- 
+> rC <- varCutree(r,V(N)$area,3000,60000)
+> table(rC$part) 
+ 0  1  2  3  4  5  6  7  8  9 10 
+ 7  6 18  5 10 17  7 19  1 14  3 
+> P$Clustering <- rC$part
+> cols <- c("darkred",as.vector(paletteer_d("RColorBrewer::Set2")),"yellow","lightcyan")
+> tm_shape(P) +
++   tm_polygons("Clustering",tm_scale_categorical(values=cols),
++   fill.legend = tm_legend(position = tm_pos_in("right", "top")) ) +
++   tm_title_out("BES 2022 / RC dis: tolerant max / var area 3K-60K",
++     position = tm_pos_out("center", "top")) 
+>  
 ```
+<img width="821" alt="ITdistVA60K" src="https://github.com/user-attachments/assets/474fa501-c2f2-4294-9a43-0e6521eac38a" />
  
 
 
