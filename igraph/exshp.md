@@ -78,15 +78,15 @@ Link number distribution:
 > coordinates <- st_coordinates(centroids)
 > plot(st_geometry(polygons), border = "grey", col = "lightgray")
 > plot(neighbors, coordinates, add = TRUE, col = "blue", lwd = 2, pch = 19)
-</code>
+```
 
 
 {{work:data:nets:pics:italynet.png?600}}
 
 {{work:data:nets:pics:italynet.pdf|italynet.pdf}}
 
-
-<code>
+ 
+```
 > library(igraph)
 > source("https://raw.githubusercontent.com/bavla/Rnet/master/R/igraph+.R")
 > str(polygons)
@@ -178,41 +178,35 @@ IGRAPH 8de3d89 UNW- 107 238 -- Italian provinces 2017-2025
 > saveRDS(N,file="ItalyIgraph.rds")
 > # N <- readRDS(file="ItalyIgraph.rds")
 > write.graph.paj(N,file="ItalyIgraph.paj",coor=cbind(V(N)$x,V(N)$y),weight="weight")
-</code>
+ 
+```
 
-<code>
+ 
+```
 > plot(N,vertex.size=2.5,vertex.label.cex=0.15)
-</code>
+```
+
+
 {{work:data:nets:pics:italyigraph2.png}}
 
 {{work:data:nets:pics:italyigraph2.pdf|italyigraph2.pdf}}
 
-<code>
+ 
+```
 > N <- set_edge_attr(N,"color",value="red")
 > N <- add_edges(N,c(
 +  8, 90 ,   9, 90 ,  49, 90 ,  53, 90 ,  53, 91 ,  56, 91 ,
 + 81, 92 ,  81, 107,  83, 102,  80, 83 ,  80, 87 ), color="blue", weight=1)
 > plot(N,vertex.size=2.5,vertex.label.cex=0.15)
 > saveRDS(N,file="ItalyIgraphExt.rds")
-</code>
+ 
+```
+
+
 
 {{work:data:nets:pics:italyigraphext.png}}
  
 ```
-```
- 
-```
- 
-```
- 
-```
- 
-```
- 
-```
- 
-```
- 
 ```
  
  
