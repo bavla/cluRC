@@ -1,0 +1,108 @@
+"RIP","REG","PROV","CM","UTS","N_PROV","N_CM","N_UTS","SIGLA","T_UTS","S_Leng","S_Area"
+1,1,1,201,201,"-","Torino","Torino","TO","Citt├á metropolitana",593230.438256,6826929538.01
+1,1,2,0,2,"Vercelli","-","Vercelli","VC","Provincia",458711.479193,2081604772.3
+1,1,3,0,3,"Novara","-","Novara","NO","Provincia",276706.922997,1340247640.05
+1,1,4,0,4,"Cuneo","-","Cuneo","CN","Provincia",542032.100362,6894822785.33
+1,1,5,0,5,"Asti","-","Asti","AT","Provincia",356340.593667,1510172930.06
+1,1,6,0,6,"Alessandria","-","Alessandria","AL","Provincia",545364.668505,3558788377.71
+1,2,7,0,7,"Aosta","-","Aosta","AO","Provincia",325835.950179,3260842686.06
+1,7,8,0,8,"Imperia","-","Imperia","IM","Provincia",236187.595664,1155262451.17
+1,7,9,0,9,"Savona","-","Savona","SV","Provincia",315191.335623,1546595520.33
+1,7,10,210,210,"-","Genova","Genova","GE","Provincia",478765.726689,1834153079.41
+1,7,11,0,11,"La Spezia","-","La Spezia","SP","Provincia",295841.224053,881606211.558
+1,3,12,0,12,"Varese","-","Varese","VA","Provincia",277190.348031,1198253374.39
+1,3,13,0,13,"Como","-","Como","CO","Provincia",296571.232935,1279004676.35
+1,3,14,0,14,"Sondrio","-","Sondrio","SO","Provincia",488642.372997,3195685389.41
+1,3,15,215,215,"-","Milano","Milano","MI","Citt├á metropolitana",380926.516349,1575540704.17
+1,3,16,0,16,"Bergamo","-","Bergamo","BG","Provincia",335963.280978,2754940488.08
+1,3,17,0,17,"Brescia","-","Brescia","BS","Provincia",488116.101824,4785482986.62
+1,3,18,0,18,"Pavia","-","Pavia","PV","Provincia",526409.610793,2968531028.1
+1,3,19,0,19,"Cremona","-","Cremona","CR","Provincia",413611.347401,1770346740.69
+1,3,20,0,20,"Mantova","-","Mantova","MN","Provincia",418187.395839,2341355763.6
+2,4,21,0,21,"Bolzano","-","Bolzano","BZ","Provincia autonoma",664587.723827,7397841691.79
+2,4,22,0,22,"Trento","-","Trento","TN","Provincia autonoma",642803.983053,6206863053.55
+2,5,23,0,23,"Verona","-","Verona","VR","Provincia",368169.834601,3096279218.99
+2,5,24,0,24,"Vicenza","-","Vicenza","VI","Provincia",358480.781972,2722481759.93
+2,5,25,0,25,"Belluno","-","Belluno","BL","Provincia",444132.085742,3609998784.5
+2,5,26,0,26,"Treviso","-","Treviso","TV","Provincia",342162.811045,2479794492.87
+2,5,27,227,227,"-","Venezia","Venezia","VE","Citt├á metropolitana",522449.278522,2478432201.68
+2,5,28,0,28,"Padova","-","Padova","PD","Provincia",366407.702657,2144165847.29
+2,5,29,0,29,"Rovigo","-","Rovigo","RO","Provincia",343178.791607,1824077301.25
+2,6,30,0,30,"Udine","-","Udine","UD","Unit├á non amministrativa",536488.338038,4970267421.75
+2,6,31,0,31,"Gorizia","-","Gorizia","GO","Unit├á non amministrativa",213555.730034,475100820.346
+2,6,32,0,32,"Trieste","-","Trieste","TS","Unit├á non amministrativa",147187.94237,212579004.638
+2,8,33,0,33,"Piacenza","-","Piacenza","PC","Provincia",353029.274994,2585764774.97
+2,8,34,0,34,"Parma","-","Parma","PR","Provincia",342800.166525,3447400142.84
+2,8,35,0,35,"Reggio nell'Emilia","-","Reggio nell'Emilia","RE","Provincia",282408.581963,2291141748.39
+2,8,36,0,36,"Modena","-","Modena","MO","Provincia",357806.394639,2687910064.81
+2,8,37,237,237,"-","Bologna","Bologna","BO","Citt├á metropolitana",438158.033383,3702222822.91
+2,8,38,0,38,"Ferrara","-","Ferrara","FE","Provincia",371983.73474,2627608863.52
+2,8,39,0,39,"Ravenna","-","Ravenna","RA","Provincia",336027.49404,1859322143.38
+2,8,40,0,40,"Forli'-Cesena","-","Forli'-Cesena","FC","Provincia",285442.208525,2378405084.67
+3,11,41,0,41,"Pesaro e Urbino","-","Pesaro e Urbino","PU","Provincia",367990.202236,2511196161.86
+3,11,42,0,42,"Ancona","-","Ancona","AN","Provincia",322533.100537,1963821366.78
+3,11,43,0,43,"Macerata","-","Macerata","MC","Provincia",360302.787241,2779452514.04
+3,11,44,0,44,"Ascoli Piceno","-","Ascoli Piceno","AP","Provincia",228557.936929,1228454399.11
+3,9,45,0,45,"Massa Carrara","-","Massa Carrara","MS","Provincia",219327.432506,1154649582.35
+3,9,46,0,46,"Lucca","-","Lucca","LU","Provincia",230376.168289,1774198660.62
+3,9,47,0,47,"Pistoia","-","Pistoia","PT","Provincia",186230.875908,964237810.931
+3,9,48,248,248,"-","Firenze","Firenze","FI","Citt├á metropolitana",462866.170014,3513485828.08
+3,9,49,0,49,"Livorno","-","Livorno","LI","Provincia",576219.910442,1215049054.9
+3,9,50,0,50,"Pisa","-","Pisa","PI","Provincia",368252.420519,2445073854.24
+3,9,51,0,51,"Arezzo","-","Arezzo","AR","Provincia",405817.123819,3232996815.12
+3,9,52,0,52,"Siena","-","Siena","SI","Provincia",429423.070217,3820818283.83
+3,9,53,0,53,"Grosseto","-","Grosseto","GR","Provincia",531658.897941,4503509562.11
+3,10,54,0,54,"Perugia","-","Perugia","PG","Provincia",656862.514829,6336976107.38
+3,10,55,0,55,"Terni","-","Terni","TR","Provincia",415939.403699,2127226578.36
+3,12,56,0,56,"Viterbo","-","Viterbo","VT","Provincia",446906.347486,3615977389.88
+3,12,57,0,57,"Rieti","-","Rieti","RI","Provincia",408582.678555,2750246507.12
+3,12,58,258,258,"-","Roma","Roma","RM","Citt├á metropolitana",708062.621924,5367518081.7
+3,12,59,0,59,"Latina","-","Latina","LT","Provincia",508222.522391,2258634263.38
+3,12,60,0,60,"Frosinone","-","Frosinone","FR","Provincia",359755.631567,3246962991.72
+4,15,61,0,61,"Caserta","-","Caserta","CE","Provincia",361488.738691,2652582195.03
+4,15,62,0,62,"Benevento","-","Benevento","BN","Provincia",330536.344905,2080371385.04
+4,15,63,263,263,"-","Napoli","Napoli","Na","Citt├á metropolitana",524654.285164,1180161872.49
+4,15,64,0,64,"Avellino","-","Avellino","AV","Provincia",401349.97727,2805997009.68
+4,15,65,0,65,"Salerno","-","Salerno","SA","Provincia",571158.986197,4956580888.61
+4,13,66,0,66,"L'Aquila","-","L'Aquila","AQ","Provincia",496139.6259,5047335686.69
+4,13,67,0,67,"Teramo","-","Teramo","TE","Provincia",238939.750501,1954337006.21
+4,13,68,0,68,"Pescara","-","Pescara","PE","Provincia",233091.38104,1230431704.18
+4,13,69,0,69,"Chieti","-","Chieti","CH","Provincia",296772.627424,2599610972.63
+4,14,70,0,70,"Campobasso","-","Campobasso","CB","Provincia",328521.656653,2925407185.46
+4,16,71,0,71,"Foggia","-","Foggia","FG","Provincia",569584.973235,7007860570.47
+4,16,72,272,272,"-","Bari","Bari","BA","Citt├á metropolitana",479364.782711,3862996377.55
+4,16,73,0,73,"Taranto","-","Taranto","TA","Provincia",422473.816134,2467714902.47
+4,16,74,0,74,"Brindisi","-","Brindisi","BR","Provincia",331705.385922,1861669528.29
+4,16,75,0,75,"Lecce","-","Lecce","LE","Provincia",373292.736631,2799064048.14
+4,17,76,0,76,"Potenza","-","Potenza","PZ","Provincia",645456.516661,6594294095.5
+4,17,77,0,77,"Matera","-","Matera","MT","Provincia",404004.799659,3478882431.5
+4,18,78,0,78,"Cosenza","-","Cosenza","CS","Provincia",595216.821514,6709456348.29
+4,18,79,0,79,"Catanzaro","-","Catanzaro","CZ","Provincia",362642.090863,2415620562.76
+4,18,80,280,280,"-","Reggio di Calabria","Reggio di Calabria","RC","Citt├á metropolitana",358633.141234,3208410929.66
+5,19,81,0,81,"Trapani","-","Trapani","TP","Libero consorzio di comuni",532806.707157,2469747134.5
+5,19,82,282,282,"-","Palermo","Palermo","PA","Citt├á metropolitana",647160.506448,5009515729.65
+5,19,83,283,283,"-","Messina","Messina","ME","Citt├á metropolitana",620876.026899,3266892840.88
+5,19,84,0,84,"Agrigento","-","Agrigento","AG","Libero consorzio di comuni",557382.254657,3053805547.53
+5,19,85,0,85,"Caltanissetta","-","Caltanissetta","CL","Libero consorzio di comuni",454618.185524,2138329605.28
+5,19,86,0,86,"Enna","-","Enna","EN","Libero consorzio di comuni",403892.490908,2574666049.95
+5,19,87,287,287,"-","Catania","Catania","CT","Citt├á metropolitana",591407.204178,3573599285.72
+5,19,88,0,88,"Ragusa","-","Ragusa","RG","Libero consorzio di comuni",305295.496058,1623891428.69
+5,19,89,0,89,"Siracusa","-","Siracusa","SR","Libero consorzio di comuni",490514.356263,2124832644.35
+5,20,90,0,90,"Sassari","-","Sassari","SS","Provincia",1353913.73288,7693841356.35
+5,20,91,0,91,"Nuoro","-","Nuoro","NU","Provincia",631203.741249,5639947631.6
+5,20,92,292,292,"-","Cagliari","Cagliari","CA","Citt├á metropolitana",296202.104096,1250327030.71
+2,6,93,0,93,"Pordenone","-","Pordenone","PN","Unit├á non amministrativa",305622.320956,2275348710.26
+4,14,94,0,94,"Isernia","-","Isernia","IS","Provincia",279534.063541,1535155576.01
+5,20,95,0,95,"Oristano","-","Oristano","OR","Provincia",451298.418591,2991433897.61
+1,1,96,0,96,"Biella","-","Biella","BI","Provincia",171815.662061,913269739.837
+1,3,97,0,97,"Lecco","-","Lecco","LC","Provincia",204350.335195,805524308.765
+1,3,98,0,98,"Lodi","-","Lodi","LO","Provincia",272144.845871,783025889.825
+2,8,99,0,99,"Rimini","-","Rimini","RN","Provincia",296490.116637,922036861.727
+3,9,100,0,100,"Prato","-","Prato","PO","Provincia",130545.636298,365756123.774
+4,18,101,0,101,"Crotone","-","Crotone","KR","Provincia",298228.281935,1735591864.3
+4,18,102,0,102,"Vibo Valentia","-","Vibo Valentia","VV","Provincia",236302.159072,1150218571.31
+1,1,103,0,103,"Verbano-Cusio-Ossola","-","Verbano-Cusio-Ossola","VB","Provincia",316501.873623,2260892038.51
+1,3,108,0,108,"Monza e della Brianza","-","Monza e della Brianza","MB","Provincia",164686.129121,405401311.244
+3,11,109,0,109,"Fermo","-","Fermo","FM","Provincia",228755.978365,863094390.205
+4,16,110,0,110,"Barletta-Andria-Trani","-","Barletta-Andria-Trani","BT","Provincia",280024.610312,1543341295.33
+5,20,111,0,111,"Sud Sardegna","-","Sud Sardegna","SU","Provincia",902366.66319,6532986886.17
