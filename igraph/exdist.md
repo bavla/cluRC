@@ -5,7 +5,7 @@ http://vladowiki.fmf.uni-lj.si/doku.php?id=notes:clu:cluster
 ```
 > setwd("C:/data/italy")  # use your working directory
 > source("https://raw.githubusercontent.com/bavla/cluRC/refs/heads/master/igraph/cluRC.R")
-> library(igraph)
+> library(igraph); library(sf); library(tmap); library(spdep); library(pals)
 > source("./cluRCdist.R")
 > N <- readRDS(file=url("https://github.com/bavla/cluRC/raw/refs/heads/master/data/IT/ItalyBESsel22.rds"))
 > U <- readRDS(file=url("https://github.com/bavla/cluRC/raw/refs/heads/master/data/IT/BES22selStd.rds"))
