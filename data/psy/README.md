@@ -71,7 +71,7 @@ Methods: max, min, ward
 <img width="500" alt="SomeTyTolMax" src="https://github.com/user-attachments/assets/172a0cb7-d1f4-4d29-9e1c-c86a45ffc5d5" />
 <img width="500" alt="SomeTyTolWard" src="https://github.com/user-attachments/assets/b5328907-4740-4475-aff2-995c127da5cc" />
 
- 
+ As we see, thr Ward method is not monotonic - dendrogram can contain reversals.
 ```
 > # leader
 > r <- cluRCdist(N,D,strategy="leader")
