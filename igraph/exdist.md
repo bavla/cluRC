@@ -44,7 +44,10 @@ rc
 +     position = tm_pos_out("center", "top"))  
 ```
 <img width="778" alt="ITdistC" src="https://github.com/user-attachments/assets/3e140f6d-dc88-422d-b77a-3ee11d2d9306" />
- 
+
+## varCutree
+
+### count
 ```
 > r$height <- R
 > rC <- varCutree(r,rep(1,107),2,30)
@@ -61,7 +64,9 @@ rc
 +     position = tm_pos_out("center", "top")) 
 ```
 <img width="796" alt="ITdistVC30" src="https://github.com/user-attachments/assets/4ec62ee8-a521-4da0-8c6a-b8d7431f1f4d" />
- 
+
+### population
+
 ```
 > rC <- varCutree(r,V(N)$pop21,1500000,15000000)
 > table(rC$part)
@@ -76,7 +81,9 @@ rc
 +     position = tm_pos_out("center", "top"))  
 ```
 <img width="789" alt="ITdistVP15M" src="https://github.com/user-attachments/assets/f6408d71-f0db-4dde-9268-c02149cd3295" />
- 
+
+### area
+
 ```
 > rC <- varCutree(r,V(N)$area,3000,60000)
 > table(rC$part) 
