@@ -10,6 +10,7 @@ are available on the files [SomeTyXY.net](https://github.com/bavla/cluRC/blob/ma
 
 
 ```
+> library(igraph)
 > netFile <- "https://raw.githubusercontent.com/bavla/cluRC/refs/heads/master/SomeTyXY.net"
 > disFile <- "https://raw.githubusercontent.com/bavla/cluRC/refs/heads/master/SomeTy.dis"
 > N <- read_graph(netFile,format="pajek")
