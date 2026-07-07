@@ -1,0 +1,108 @@
+ind;Type;Province;Capital;Code;Region;Macroregion;Pop2021;Area;PopDensity;Comuni;Established
+1;F;Agrigento;Agrigento;AG;Sicily;Insular;416181;3052.82 ;136;43;1861
+2;O;Alessandria;Alessandria;AL;Piedmont;North-West;409392;3558.78 ;115;187;1861
+3;O;Ancona;Ancona;AN;Marche;Centre;464419;1963.21 ;237;47;1861
+4;D;Aosta;Aosta;AO;Aosta Valley;North-West;124089;3260.85 ;38;74;1927
+5;O;Arezzo;Arezzo;AR;Tuscany;Centre;336501;3232.99 ;104;36;1861
+6;O;Ascoli Piceno;Ascoli Piceno;AP;Marche;Centre;203425;1228.19 ;166;33;1861
+7;O;Asti;Asti;AT;Piedmont;North-West;209390;1510.17 ;139;118;1935
+8;O;Avellino;Avellino;AV;Campania;South;402929;2805.96 ;144;118;1861
+9;M;Bari;Bari;BA;Apulia;South;1230158;3862.73 ;318;41;1861
+10;O;Barletta-Andria-Trani;Barletta Andria Trani;BT;Apulia;South;381091;1542.93 ;247;10;2004
+11;O;Belluno;Belluno;BL;Veneto;North-East;199704;3609.98 ;55;61;1866
+12;O;Benevento;Benevento;BN;Campania;South;266716;2080.37 ;128;78;1861
+13;O;Bergamo;Bergamo;BG;Lombardy;North-West;1103556;2754.86 ;401;243;1861
+14;O;Biella;Biella;BI;Piedmont;North-West;170724;913.27 ;187;74;1992
+15;M;Bologna;Bologna;BO;Emilia-Romagna;North-East;1015608;3702.25 ;274;55;1861
+16;O;Brescia;Brescia;BS;Lombardy;North-West;1255709;4785.48 ;262;205;1861
+17;O;Brindisi;Brindisi;BR;Apulia;South;381946;1861.33 ;205;20;1927
+18;M;Cagliari;Cagliari;CA;Sardinia;Insular;421488;1248.66 ;338;17;1861
+19;F;Caltanissetta;Caltanissetta;CL;Sicily;Insular;253688;2138.47 ;119;22;1861
+20;O;Campobasso;Campobasso;CB;Molise;South;212879;2925.28 ;73;84;1861
+21;O;Caserta;Caserta;CE;Campania;South;901903;2651.28 ;340;104;1861
+22;M;Catania;Catania;CT;Sicily;Insular;1074089;3573.51 ;301;58;1861
+23;O;Catanzaro;Catanzaro;CZ;Calabria;South;344439;2415.41 ;143;80;1861
+24;O;Chieti;Chieti;CH;Abruzzo;South;375215;2599.53 ;144;104;1861
+25;O;Como;Como;CO;Lombardy;North-West;596456;1279.02 ;466;148;1861
+26;O;Cosenza;Cosenza;CS;Calabria;South;676119;6709.62 ;101;150;1861
+27;O;Cremona;Cremona;CR;Lombardy;North-West;352242;1770.41 ;199;113;1861
+28;O;Crotone;Crotone;KR;Calabria;South;164059;1735.65 ;95;27;1992
+29;O;Cuneo;Cuneo;CN;Piedmont;North-West;581798;6894.83 ;84;247;1861
+30;F;Enna;Enna;EN;Sicily;Insular;157690;2574.67 ;61;20;1927
+31;O;Fermo;Fermo;FM;Marche;Centre;169710;862.75 ;197;40;2004
+32;O;Ferrara;Ferrara;FE;Emilia-Romagna;North-East;342061;2627.38 ;130;21;1861
+33;M;Florence;Florence;FI;Tuscany;Centre;998431;3513.65 ;284;41;1861
+34;O;Foggia;Foggia;FG;Apulia;South;602394;7007.33 ;86;61;1861
+35;O;Forli-Cesena;Forli;FC;Emilia-Romagna;North-East;392642;2378.32 ;165;30;1861
+36;O;Frosinone;Frosinone;FR;Lazio;Centre;472559;3246.96 ;146;91;1927
+37;M;Genoa;Genoa;GE;Liguria;North-West;823612;1833.75 ;449;67;1861
+38;R;Gorizia;Gorizia;GO;Friuli-Venezia Giulia;North-East;139070;475.40 ;293;25;1923
+39;O;Grosseto;Grosseto;GR;Tuscany;Centre;217846;4503.17 ;48;28;1861
+40;O;Imperia;Imperia;IM;Liguria;North-West;209244;1154.76 ;181;66;1861
+41;O;Isernia;Isernia;IS;Molise;South;81415;1535.16 ;53;52;1970
+42;O;L'Aquila;L'Aquila;AQ;Abruzzo;South;290811;5047.34 ;58;108;1861
+43;O;La Spezia;La Spezia;SP;Liguria;North-West;215887;881.38 ;245;32;1924
+44;O;Latina;Latina;LT;Lazio;Centre;566224;2256.14 ;251;33;1934
+45;O;Lecce;Lecce;LE;Apulia;South;776230;2798.88 ;277;96;1861
+46;O;Lecco;Lecco;LC;Lombardy;North-West;333569;805.60 ;414;84;1992
+47;O;Livorno;Livorno;LI;Tuscany;Centre;328996;1213.52 ;271;19;1861
+48;O;Lodi;Lodi;LO;Lombardy;North-West;227343;782.97 ;290;60;1992
+49;O;Lucca;Lucca;LU;Tuscany;Centre;383957;1774.04 ;216;33;1861
+50;O;Macerata;Macerata;MC;Marche;Centre;307410;2779.31 ;111;55;1861
+51;O;Mantua;Mantua;MN;Lombardy;North-West;406061;2341.35 ;173;64;1866
+52;O;Massa-Carrara;Massa;MS;Tuscany;Centre;189836;1154.60 ;164;17;1861
+53;O;Matera;Matera;MT;Basilicata;South;192640;3478.84 ;55;31;1927
+54;M;Messina;Messina;ME;Sicily;Insular;603980;3266.07 ;185;108;1861
+55;M;Milan;Milan;MI;Lombardy;North-West;3241813;1575.49 ;2058;133;1861
+56;O;Modena;Modena;MO;Emilia-Romagna;North-East;703696;2687.88 ;262;47;1861
+57;O;Monza and Brianza;Monza;MB;Lombardy;North-West;870113;405.41 ;2146;55;2004
+58;M;Naples;Naples;Na;Campania;South;2986745;1178.94 ;2533;92;1861
+59;O;Novara;Novara;NO;Piedmont;North-West;362925;1340.25 ;271;87;1861
+60;O;Nuoro;Nuoro;NU;Sardinia;Insular;201517;5637.97 ;36;74;1927
+61;O;Oristano;Oristano;OR;Sardinia;Insular;152418;2990.41 ;51;87;1974
+62;O;Padua;Padua;PD;Veneto;North-East;932629;2144.12 ;435;102;1866
+63;M;Palermo;Palermo;PA;Sicily;Insular;1208819;5009.21 ;241;82;1861
+64;O;Parma;Parma;PR;Emilia-Romagna;North-East;449628;3447.40 ;130;44;1861
+65;O;Pavia;Pavia;PV;Lombardy;North-West;535801;2968.59 ;180;186;1861
+66;O;Perugia;Perugia;PG;Umbria;Centre;645506;6336.99 ;102;59;1861
+67;O;Pesaro and Urbino;Pesaro;PU;Marche;Centre;353272;2567.71 ;138;50;1861
+68;O;Pescara;Pescara;PE;Abruzzo;South;313882;1230.29 ;255;46;1927
+69;O;Piacenza;Piacenza;PC;Emilia-Romagna;North-East;283742;2585.76 ;110;46;1861
+70;O;Pisa;Pisa;PI;Tuscany;Centre;417983;2444.82 ;171;37;1861
+71;O;Pistoia;Pistoia;PT;Tuscany;Centre;290245;964.16 ;301;20;1927
+72;R;Pordenone;Pordenone;PN;Friuli-Venezia Giulia;North-East;310634;2275.35 ;137;50;1968
+73;O;Potenza;Potenza;PZ;Basilicata;South;352490;6594.28 ;53;100;1861
+74;O;Prato;Prato;PO;Tuscany;Centre;265269;365.66 ;725;7;1992
+75;F;Ragusa;Ragusa;RG;Sicily;Insular;314910;1623.91 ;194;12;1927
+76;O;Ravenna;Ravenna;RA;Emilia-Romagna;North-East;386643;1859.39 ;208;18;1861
+77;M;Reggio Calabria;Reggio Calabria;RC;Calabria;South;523791;3210.31 ;163;97;1861
+78;O;Reggio Emilia;Reggio Emilia;RE;Emilia-Romagna;North-East;527140;2291.15 ;230;42;1861
+79;O;Rieti;Rieti;RI;Lazio;Centre;151335;2750.24 ;55;73;1927
+80;O;Rimini;Rimini;RN;Emilia-Romagna;North-East;337777;865.01 ;390;27;1992
+81;M;Rome;Rome;RM;Lazio;Centre;4231451;5363.22 ;789;121;1870
+82;O;Rovigo;Rovigo;RO;Veneto;North-East;230763;1819.86 ;127;50;1866
+83;O;Salerno;Salerno;SA;Campania;South;1065967;4954.05 ;215;158;1861
+84;O;Sassari;Sassari;SS;Sardinia;Insular;476357;7691.75 ;62;92;1861
+85;O;Savona;Savona;SV;Liguria;North-West;269752;1546.27 ;174;69;1927
+86;O;Siena;Siena;SI;Tuscany;Centre;263801;3820.81 ;69;35;1861
+87;O;Sondrio;Sondrio;SO;Lombardy;North-West;178798;3195.68 ;56;77;1861
+88;O;South Sardinia;Carbonia;SU;Sardinia;Insular;338264;6530.67 ;52;107;2016
+89;A;South Tyrol;Bolzano;BZ;Trentino-South Tyrol;North-East;534912;7397.86 ;72;116;1927
+90;F;Syracuse;Syracuse;SR;Sicily;Insular;386071;2124.19 ;182;21;1861
+91;O;Taranto;Taranto;TA;Apulia;South;561958;2467.33 ;228;29;1924
+92;O;Teramo;Teramo;TE;Abruzzo;South;301104;1954.34 ;154;47;1861
+93;O;Terni;Terni;TR;Umbria;Centre;219946;2127.23 ;103;33;1927
+94;F;Trapani;Trapani;TP;Sicily;Insular;418277;2469.70 ;169;25;1861
+95;A;Trento;Trento;TN;Trentino-South Tyrol;North-East;542166;6206.87 ;87;166;1923
+96;O;Treviso;Treviso;TV;Veneto;North-East;880417;2479.80 ;355;94;1866
+97;R;Trieste;Trieste;TS;Friuli-Venezia Giulia;North-East;230689;212.50 ;1086;6;1923
+98;M;Turin;Turin;TO;Piedmont;North-West;2219206;6826.91 ;325;312;1861
+99;R;Udine;Udine;UD;Friuli-Venezia Giulia;North-East;521117;4969.23 ;105;134;1866
+100;O;Varese;Varese;VA;Lombardy;North-West;880093;1198.24 ;734;138;1927
+101;M;Venice;Venice;VE;Veneto;North-East;843545;2472.88 ;341;44;1866
+102;O;Verbano-Cusio-Ossola;Verbania;VB;Piedmont;North-West;154926;2260.89 ;69;74;1992
+103;O;Vercelli;Vercelli;VC;Piedmont;North-West;166584;2081.60 ;80;82;1927
+104;O;Verona;Verona;VR;Veneto;North-East;927810;3096.28 ;300;98;1866
+105;O;Vibo Valentia;Vibo Valentia;VV;Calabria;South;152193;1150.62 ;146;50;1992
+106;O;Vicenza;Vicenza;VI;Veneto;North-East;854962;2722.45 ;314;114;1866
+107;O;Viterbo;Viterbo;VT;Lazio;Centre;308830;3615.16 ;85;60;1927
