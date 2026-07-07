@@ -2,16 +2,14 @@
 
 source("https://raw.githubusercontent.com/bavla/cluRC/refs/heads/master/igraph/cluRC.R")
 
-z(x) - standardize vector x
 
-varCutree(R,var,vmin,vmax)
-
-derivedTree(R,type='rank')
+varCutree(R,var,vmin,vmax) - https://github.com/bavla/cluRC/blob/master/igraph/exdist.md#varcutree
 
 cluRCdist(N,D,method="max",strategy="tolerant")
 
 cluRCnet(N,method="max",strategy="tolerant")
 
+derivedTree(R,type='rank')
 
 ```
  
