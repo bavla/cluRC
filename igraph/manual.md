@@ -13,6 +13,26 @@ cluRCdist(N,D,method="max",strategy="tolerant")
 cluRCnet(N,method="max",strategy="tolerant")
 
 
+```
+ 
+```
+```
+ 
+```
+ 
+```
+ 
+```
+ 
+```
+ 
+```
+ 
+```
+ 
+```
+ 
+
 <hr />
 
 [igraph](./README.md), [cluRC](../README.md)
