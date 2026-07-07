@@ -57,14 +57,13 @@ Methods: max, min, ward
 ```
 > source("https://raw.githubusercontent.com/bavla/cluRC/refs/heads/master/igraph/cluRC.R")
 > library(igraph)
+
 > N <- readRDS(file="SomeTyNet.rds"); D <- readRDS(file="SomeTyDis.rds")
 > # tolerant
 > r <- cluRCdist(N,D)
 > plot(r,hang=-1,cex=1.5,main="Some types: tolerant max")
 > r <- cluRCdist(N,D,method="ward",strategy="tolerant")
 > plot(r,hang=-1,cex=1.5,main="Some types: tolerant ward")
-> 
-
 ```
 
 <img width="500" alt="SomeTyTolMax" src="https://github.com/user-attachments/assets/172a0cb7-d1f4-4d29-9e1c-c86a45ffc5d5" />
@@ -72,8 +71,15 @@ Methods: max, min, ward
 
  
 ```
- 
+> # leader
+> r <- cluRCdist(N,D,strategy="leader")
+> plot(r,hang=-1,cex=1.5,main="Some types: leader max")
+> # strict
+> r <- cluRCdist(N,D,method="max",strategy="strict")
+> plot(r,hang=-1,cex=1.5,main="Some types: strict max") 
 ```
+<img width="500" alt="SomeTyLdrMax" src="https://github.com/user-attachments/assets/8882e2ac-2936-4305-ba64-69ba5221759d" />
+<img width="500" alt="SomeTyStrMax" src="https://github.com/user-attachments/assets/1076e64f-76f2-4cda-af31-8e01bd679e54" />
  
 ```
  
