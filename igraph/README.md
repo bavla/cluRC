@@ -3,7 +3,7 @@
   - [Manual](manual.md)
   - Examples:
     - [network from a shape file](exshp.md)
-    - [data](exig.md)
+    - [ordinary clustering](exig.md)
     - [cluRCdist](exdist.md)
     - [cluRCnet](exnet.md)
     - [varCutree](exvar.md)
