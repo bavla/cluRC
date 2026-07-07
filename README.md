@@ -7,6 +7,7 @@
   * [cluRC datasets](./data/README.md)
   * [cluRC documents](./doc/README.md)
   * [cluRC 2018 version](./2018.md)
+  * [cluRC in Python](http://localhost:8800/doku.php?id=work:alg:rcht)
 
 A brief description of the field of **clustering with relational constraint** is given in the [abstract for the IFCS 2026 conference](./doc/IFCS2026_VB_abs.pdf).
 
