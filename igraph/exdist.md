@@ -58,8 +58,17 @@ rc
 <img width="796" alt="ITdistVC30" src="https://github.com/user-attachments/assets/4ec62ee8-a521-4da0-8c6a-b8d7431f1f4d" />
  
 ```
- 
+> rC <- varCutree(r,V(N)$pop21,1500000,15000000)
+> table(rC$part) 
+> P$Clustering <- rC$part
+> cols <- c("darkred",as.vector(paletteer_d("RColorBrewer::Set2")))
+> tm_shape(P) +
++   tm_polygons("Clustering",tm_scale_categorical(values=cols),
++   fill.legend = tm_legend(position = tm_pos_in("right", "top")) ) +
++   tm_title_out("BES 2022 / RC dis: tolerant max / var population 1.5M-15M",
++     position = tm_pos_out("center", "top"))  
 ```
+<img width="789" alt="ITdistVP15M" src="https://github.com/user-attachments/assets/f6408d71-f0db-4dde-9268-c02149cd3295" />
  
 ```
  
