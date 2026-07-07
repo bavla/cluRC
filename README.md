@@ -8,6 +8,8 @@ Clustering with relational constraint
   * [cluRC documents](./doc/README.md)
   * [cluRC 2018 version](./2018.md)
 
+A brief description of the field of **clustering with relational constraint** is given in the [abstract for the IFCS 2026 conference](./doc/).
+
 Let $U$ be a set of units, each measured on several properties (attributes) $A$, from which we can compute the dissimilarity $d$ between pairs of units. We also have a relation $R$ on $U$ that indicates the compatibility of units. This defines a network $N = (U, R, A, d)$, with $U$ as the set of nodes,  $R$ as the set of links, and $d$ as the weight on links.
 
 In clustering with a relational constraint, we aim to find a clustering / partition $\mathbf{C} = \{C_1,\ldots,C_k\}$ of the set of units $U$ that minimizes the criterion function, also known as the clustering "error", $P(\mathbf{C}) = \sum_{C \in \mathbf{C}} p(C)$, where $p(C)$ is a cluster error. Different $p(C)$ s can be found in the clustering literature. Here, each cluster $C \in \mathbf{C}$ must form a connected component of the graph $(U,R)$ in a chosen way -- strict, leader, tolerant, or two-way. These modes define the set of feasible clusterings $\Phi$. This can be expressed as an optimization problem [2]: find a clustering $\mathbf{C}^* \in  \Phi$ such that 
@@ -22,7 +24,7 @@ An example of leader clustering is identifying thematic clusters of authors in a
 
 Clustering with a relational constraint was introduced by Ferligoj and Batagelj [7,8]. They also proposed solution procedures based on a dissimilarity matrix. Both agglomerative and local optimization approaches can be adapted. However, these procedures are not suitable for networks with a very large number of units (over 10,000). Large networks are typically sparse, and by limiting ourselves to dissimilarities only between linked units and to criterion functions such as minimum, maximum, or average, we can develop much more efficient procedures [5].
 
-Procedures for clustering with relational constraints are partially supported in Pajek, a program for analysis and visualization of large networks [4]. The Pajek or netsJSON format [1] is used to describe network data. cluRC is an R package that offers both types of procedures to users. In this talk, we will present these procedures and demonstrate their application to real-world data. The cluRC package is available on GitHub [9].
+Procedures for clustering with relational constraints are partially supported in Pajek, a program for analysis and visualization of large networks [4]. The Pajek or netsJSON format [1] is used to describe network data. cluRC is an R package that offers both types of procedures to users.  The cluRC package is available on GitHub [9].
 
 ## References
 [1] Batagelj, V., Pisanski, T., Savnik, I., Slavec, A., Bašić, N.: Towards a Format for Describing Networks. In
