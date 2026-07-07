@@ -1,6 +1,6 @@
 # Italian provinces
 
-S <- scale(T[,4:24])
+  - [Italian provinces map](ipmap.md)
 
 ```
  
