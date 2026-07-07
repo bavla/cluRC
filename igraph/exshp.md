@@ -1,10 +1,29 @@
 # Network from a shape file
 
+
+
+We will use the [Istat BES-2025](https://www.istat.it/en/news/bes-at-local-level-2025-edition/) data.
 ```
-===== Application =====
+> setwd("C:/Users/vlado/DL/data/italy")
+> library(readxl)
+> df <- read_xlsx(path="./BES2024/Indicators_NUTS3_Level_Gender_ed.2025.xlsx")
+> colnames(df)
+ [1] "DOMAIN"          "INDICATOR  CODE" "INDICATOR"       "GENDER"          "REGION"         
+ [6] "UNIT OF MEASURE" "SOURCE"          "V2004"           "V2005"           "V2006"          
+[11] "V2007"           "V2008"           "V2009"           "V2010"           "V2011"          
+[16] "V2012"           "V2013"           "V2014"           "V2015"           "V2016"          
+[21] "V2017"           "V2018"           "V2019"           "V2020"           "V2021"          
+[26] "V2022"           "V2023"           "V2024"           "NOTES"           "W_DOMAIN"       
+[31] "W_INDICATOR"     "W_GENDER"        "W_REGION"
+```
+We manually collected some general information about 107 provinces from an older version of the Wikipedia page ([Provinces_of_Italy / 2025](https://en.wikipedia.org/w/index.php?title=Provinces_of_Italy&diff=prev&oldid=1246466213)) and saved it in the file ''WProvinces24A.csv''.
+
+Finally, we would like to display some results on a map. For the given period, we will use the 2024 map [Istat  confini delle unita amministrative](https://www.istat.it/notizia/confini-delle-unita-amministrative-a-fini-statistici-al-1-gennaio-2018-2/). We saved the data from the corresponding ''ProvCM01012024_WGS84.dbf'' file to the file ''ProvCM01012024.csv''.
+
+The sets of units and their arrangements are not the same. Therefore, we collect the selected data in a common table ordered as in the map description.
 
 
-<code>
+```
 > setwd("C:/Users/vlado/DL/data/italy")
 > library(sf)
 > library(spdep)
