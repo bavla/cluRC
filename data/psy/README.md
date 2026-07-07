@@ -63,7 +63,8 @@ j 3 4 5 3 7 7 2 4 5
 
 ```
 
-<img width="624" alt="SomeTyTolMax" src="https://github.com/user-attachments/assets/f9fd8f3b-dc69-4d6f-ac43-ab46acab00a2" />
+<img width="500" alt="SomeTyTolMax" src="https://github.com/user-attachments/assets/172a0cb7-d1f4-4d29-9e1c-c86a45ffc5d5" />
+
  
 ```
  
