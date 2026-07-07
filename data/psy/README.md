@@ -73,9 +73,11 @@ Methods: max, min, ward
 ```
 > # leader
 > r <- cluRCdist(N,D,strategy="leader")
+> # !!! 3 components
 > plot(r,hang=-1,cex=1.5,main="Some types: leader max")
 > # strict
 > r <- cluRCdist(N,D,method="max",strategy="strict")
+> # !!! 4 components
 > plot(r,hang=-1,cex=1.5,main="Some types: strict max") 
 ```
 <img width="500" alt="SomeTyLdrMax" src="https://github.com/user-attachments/assets/8882e2ac-2936-4305-ba64-69ba5221759d" />
