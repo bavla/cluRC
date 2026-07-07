@@ -1,7 +1,9 @@
 # cluRCdis
 
-http://vladowiki.fmf.uni-lj.si/doku.php?id=notes:clu:cluster
+## Clustering with RC and complete dissimilarity matrix
 
+For illustration, we will use the data about [Italian provinces](https://github.com/bavla/cluRC/blob/master/data/IT/README.md). [it](/data/IT/README.md)
+The relational constraint is given as an igraph network N. Standardized numerical node properties are given in matrix U (same order of nodes in N and U).
 ```
 > setwd("C:/data/italy")  # use your working directory
 > source("https://raw.githubusercontent.com/bavla/cluRC/refs/heads/master/igraph/cluRC.R")
@@ -19,6 +21,9 @@ Method: max   Strategy: tolerant
 ```
 
 <img width="1000" alt="dendroRCdTolMax" src="https://github.com/user-attachments/assets/d761c1bc-33d4-44ae-8cf8-91f7d92093e6" />
+
+## Clusters
+
 
 ```
 > rc <- cutree(r,k=16)
