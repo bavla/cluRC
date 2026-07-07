@@ -2,7 +2,7 @@
 
 ## Clustering with RC and complete dissimilarity matrix
 
-For illustration, we will use the data about [Italian provinces](https://github.com/bavla/cluRC/blob/master/data/IT/README.md). [it](/data/IT/README.md)
+For illustration, we will use the data about [Italian provinces](/data/IT/README.md).
 The relational constraint is given as an igraph network N. Standardized numerical node properties are given in matrix U (same order of nodes in N and U).
 ```
 > setwd("C:/data/italy")  # use your working directory
