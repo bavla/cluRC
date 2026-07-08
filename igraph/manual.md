@@ -1,6 +1,5 @@
 # cluRC manual
 
-source("https://raw.githubusercontent.com/bavla/cluRC/refs/heads/master/igraph/cluRC.R")
 
 
 ## varCutree(R,var,vmin,vmax) 
