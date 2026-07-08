@@ -2,9 +2,8 @@
 # March 2018 and July 2026
 # by Vladimir Batagelj
 #
+# source("https://raw.githubusercontent.com/bavla/cluRC/refs/heads/master/igraph/cluRC.R")
 # library(igraph); library(sf); library(tmap); library(spdep); library(pals)
-
-z <- function(x) (x-mean(x,na.rm=TRUE))/sd(x,na.rm=TRUE)
 
 
 varCutree <- function(R,var,vmin,vmax){
@@ -45,6 +44,25 @@ derivedTree <- function(R,type='rank'){
     h[i] <- eval(ex)
   }
   return(h)
+}
+
+transTree <- function(t,type="rank"){
+  r <- t; r$height <- derivedTree(t,type)
+  p <- order(r$height)
+  T <- cbind(r$merge[,1],r$merge[,2],r$height)
+  q <- order(p) # inverse permutation
+  R <- T[p,]
+  for(j in 1:2) for(i in 1:nrow(R)) if(R[i,j]>0) R[i,j] <- q[R[i,j]]
+  r$merge[,1] <- R[,1]; r$merge[,2] <- R[,2]; r$height <- R[,3]
+  r$method <- paste0(r$method,"/",type)
+  return(r)
+}
+
+listClu <- function(t,tc){
+  T <- table(tc); L <- list()
+  for(c in as.integer(names(T))) { C <- which(tc==c)
+    names(C) <- t$labels[C]; L[[c]] <- C }
+  return(L)
 }
 
 # Clustering with relational constraint based on the class dist
