@@ -5,10 +5,6 @@
 
 http://vladowiki.fmf.uni-lj.si/doku.php?id=pro:relc:eu
 
-http://vladowiki.fmf.uni-lj.si/doku.php?id=pro:relc:eu
-
-C:\Users\vlado\work\Delphi\Cluse\Cluse\data\Europe
-
 ```
 > setwd("C:/Users/vlado/work/Delphi/Cluse/Cluse/data/Europe")
 > Evar <- read.csv2("Europe.csv",skip=2)
@@ -37,7 +33,19 @@ C:\Users\vlado\work\Delphi\Cluse\Cluse\data\Europe
 
 
 ```
- 
+> library(igraph)
+> netFile <- "https://github.com/bavla/cluRC/raw/refs/heads/master/data/Eu/EuropePsy.net"
+> datFile <- "https://github.com/bavla/cluRC/raw/refs/heads/master/data/Eu/EuropePsy.csv"
+> N <- read_graph(netFile,format="pajek")
+> E <- read.csv2(datFile,row.names=1,skip=2)
+> for(a in colnames(E)) vertex_attr(N,a) <- E[,a] 
+> N <- delete_vertex_attr(N,"country")
+> N$name <- "cluRC example from Psychometrika / Europe 1980"
+> N$ref <- paste0("A. Ferligoj, V. Batagelj: Clustering with ", 
++   "relational constraints. Psychometrika 47 (4): 413-426 1982")
+> N$by <- "Vladimir Batagelj"
+> N$date <- date()
+> saveRDS(N,file="EuropePsy.rds")
 ```
  
 ```
