@@ -65,6 +65,11 @@ listClu <- function(t,tc){
   return(L)
 }
 
+printClu <- function(t,tc){
+  L <- listClu(t,tc)
+  for(i in 1:length(L)) cat(i,":",names(L[[i]]),"\n")
+}
+
 # Clustering with relational constraint based on the class dist
 cluRCdist <- function(N,D,method="max",strategy="tolerant"){
   orDendro <- function(i){if(i<0) return(-i)
