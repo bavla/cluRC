@@ -50,8 +50,20 @@ Combine the geographical neighbors graph and European countries' data into a igr
 ```
  
 ```
- 
+> setwd("C:/Users/vlado/work/Delphi/Cluse/Cluse/data/Europe")
+> source("https://raw.githubusercontent.com/bavla/cluRC/refs/heads/master/igraph/cluRC.R")
+> library(igraph); library(httr)
+> library(sf); library(tmap); library(spdep); library(pals); library(paletteer)
+> rdsFile <- "https://github.com/bavla/cluRC/raw/refs/heads/master/data/Eu/EuropePsy.rds"
+> N <- readRDS(file=url(rdsFile))
+> vars <- as.matrix(as_data_frame(N,what="vertices")[,10:30]) 
+> D <- dist(scale(vars))
+> h <- hclust(D)
+> plot(h,hang=-1,main="European countries 1980") 
 ```
+
+<img width="795" alt="Eu80HC" src="https://github.com/user-attachments/assets/8df4b91a-8b23-4d80-b93e-06cd0115b22f" />
+
  
 ```
  
