@@ -33,11 +33,6 @@ IGRAPH a2e04d6 DNW- 62143 642419 -- cluRC example from Clustering and blockmodel
 + edges from a2e04d6 (vertex names):
  [1] [ANONYMO_ ->SMITHSON_F HARRASSO_H->SMITHSON_F FORBES_M  ->GESELL_A  
  [4] THOMPSON_W->BOSE_R     THOMPSON_W->CLATWORT_W THOMPSON_W->CONNOR_W  
- [7] THOMPSON_W->HUNT_G     THOMPSON_W->LEHMANN_E  THOMPSON_W->MADOW_W   
-[10] THOMPSON_W->SKIBINSK_M THOMPSON_W->WALD_A     THOMPSON_W->YOUDEN_W  
-[13] WALD_A    ->WHITE_H    WALD_A    ->BOORMAN_S  WALD_A    ->BREIGER_R 
-[16] WALD_A    ->COLEMAN_J  WALD_A    ->WILLIAMS_O WALD_A    ->KNOKE_D   
-[19] WALD_A    ->CARRINGT_P WALD_A    ->MARSH_D    WALD_A    ->WASSERMA_S
 + ... omitted several edges
 ```
 ## Analysis
