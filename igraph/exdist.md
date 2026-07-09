@@ -46,12 +46,27 @@ rc
 <img width="839" alt="ITdistCut16" src="https://github.com/user-attachments/assets/42866ce7-d9b6-4036-8653-37ed5d8ff350" />
 
 ```
-
+> t <- transTree(r,type="rank")
+> plot(t,hang=-1,cex=0.6,main="BES 2022 / RC tolerant max / rank",lwd=1.2)
+> tc <- cutree(t,k=16)
+> (h <- table(tc))
+tc
+ 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 
+10  6  1 18  5  2  3  1 10  9 24 14  1  1  1  1 
 ```
 <img width="1000" alt="dendroRCdTolMaxRank" src="https://github.com/user-attachments/assets/6ca4f49f-cad7-45f0-a98d-04d1a3aba430" />
 
 ```
-
+> tc[tc %in% which(h==1)] <- 999
+> p <- as.integer(factor(tc))
+> names(p) <- names(tc)
+> P$Clustering <- p
+> cols <- c(as.vector(paletteer_d("RColorBrewer::Set2")),"yellow","lightcyan","darkred")
+> tm_shape(P) +
++   tm_polygons("Clustering",tm_scale_categorical(values=cols),
++   fill.legend = tm_legend(position = tm_pos_in("right", "top")) ) +
++   tm_title_out("BES 2022 / RC dis: tolerant max / rank",
++     position = tm_pos_out("center", "top")) 
 ```
 <img width="824" alt="ITdistCut16rank" src="https://github.com/user-attachments/assets/dbf644f3-66ed-4b9c-a8a9-03c95cb4320c" />
 
