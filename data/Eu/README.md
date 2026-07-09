@@ -37,16 +37,17 @@ Combine the geographical neighbors graph and European countries' data into a igr
 > library(igraph)
 > netFile <- "https://github.com/bavla/cluRC/raw/refs/heads/master/data/Eu/EuropePsy.net"
 > datFile <- "https://github.com/bavla/cluRC/raw/refs/heads/master/data/Eu/EuropePsy.csv"
-> N <- read_graph(netFile,format="pajek")
+> N <- simplify(read_graph(netFile,format="pajek"))
+> V(N)$y <- 1-V(N)$y
 > E <- read.csv2(datFile,row.names=1,skip=2)
 > for(a in colnames(E)) vertex_attr(N,a) <- E[,a] 
-> N <- delete_vertex_attr(N,"country")
+> V(N)$country <- V(N)$name
 > N$name <- "cluRC example from Psychometrika / Europe 1980"
 > N$ref <- paste0("A. Ferligoj, V. Batagelj: Clustering with ", 
 +   "relational constraints. Psychometrika 47 (4): 413-426 1982")
 > N$by <- "Vladimir Batagelj"
 > N$date <- date()
-> saveRDS(N,file="EuropePsy.rds")
+> saveRDS(N,file="EuropePsy.rds") 
 ```
  
 ```
