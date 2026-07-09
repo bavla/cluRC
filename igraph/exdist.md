@@ -43,7 +43,18 @@ rc
 +   tm_title_out("BES 2022 / RC dis: tolerant max",
 +     position = tm_pos_out("center", "top"))  
 ```
-<img width="778" alt="ITdistC" src="https://github.com/user-attachments/assets/3e140f6d-dc88-422d-b77a-3ee11d2d9306" />
+<img width="839" alt="ITdistCut16" src="https://github.com/user-attachments/assets/42866ce7-d9b6-4036-8653-37ed5d8ff350" />
+
+```
+
+```
+<img width="1000" alt="dendroRCdTolMaxRank" src="https://github.com/user-attachments/assets/6ca4f49f-cad7-45f0-a98d-04d1a3aba430" />
+
+```
+
+```
+<img width="824" alt="ITdistCut16rank" src="https://github.com/user-attachments/assets/dbf644f3-66ed-4b9c-a8a9-03c95cb4320c" />
+
 
 ## varCutree
 
