@@ -5,6 +5,10 @@
 
 http://vladowiki.fmf.uni-lj.si/doku.php?id=pro:relc:eu
 
+http://vladowiki.fmf.uni-lj.si/doku.php?id=pro:relc:eu
+
+C:\Users\vlado\work\Delphi\Cluse\Cluse\data\Europe
+
 ```
  
 ```
