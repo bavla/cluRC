@@ -5,6 +5,7 @@
 
 http://vladowiki.fmf.uni-lj.si/doku.php?id=pro:relc:eu
 
+Add ISO alpha-2 country codes to the The Hammond Almanac 1980 European countries data.
 ```
 > setwd("C:/Users/vlado/work/Delphi/Cluse/Cluse/data/Europe")
 > Evar <- read.csv2("Europe.csv",skip=2)
@@ -31,7 +32,7 @@ http://vladowiki.fmf.uni-lj.si/doku.php?id=pro:relc:eu
 > write.csv2(E,file="EuropePsy.csv")
 ```
 
-
+Combine the geographical neighbors graph and European countries' data into a igraph network.
 ```
 > library(igraph)
 > netFile <- "https://github.com/bavla/cluRC/raw/refs/heads/master/data/Eu/EuropePsy.net"
