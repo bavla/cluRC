@@ -57,18 +57,26 @@ Combine the geographical neighbors graph and European countries' data into a igr
 > library(sf); library(tmap); library(spdep); library(pals); library(paletteer)
 > rdsFile <- "https://github.com/bavla/cluRC/raw/refs/heads/master/data/Eu/EuropePsy.rds"
 > N <- readRDS(file=url(rdsFile))
-> vars <- as.matrix(as_data_frame(N,what="vertices")[,10:30]) 
+> vars <- as.matrix(as_data_frame(N,what="vertices")[,11:31]) 
 > D <- dist(scale(vars))
 > h <- hclust(D)
-> plot(h,hang=-1,main="European countries 1980") 
+> plot(h,hang=-1,main="European countries 1980")
 ```
 
 <img width="795" alt="Eu80HC" src="https://github.com/user-attachments/assets/8df4b91a-8b23-4d80-b93e-06cd0115b22f" />
 
  
 ```
- 
+> r <- cluRCdist(N,D)
+Clustering with relational constraint based on the class dist
+by Vladimir Batagelj, March 2018 / July 2026
+Method: max   Strategy: tolerant 
+[1] "Started: 2026-07-10 00:23:32.045258"
+[1] "Finished: 2026-07-10 00:23:32.107539"
+> plot(r,hang=-1,main="European countries 1980 / RC tolerant max")
+
 ```
+<img width="846" alt="Eu80RCtolMax" src="https://github.com/user-attachments/assets/9e68c07e-905b-4e85-ac7b-73ea2fdc75be" />
  
 ```
  
