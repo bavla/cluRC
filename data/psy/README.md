@@ -58,9 +58,11 @@ Methods: max, min, ward
 
 ```
 > source("https://raw.githubusercontent.com/bavla/cluRC/refs/heads/master/igraph/cluRC.R")
-> library(igraph)
+> library(igraph); library(httr)
 
-> N <- readRDS(file="SomeTyNet.rds"); D <- readRDS(file="SomeTyDis.rds")
+> netFile <- "https://github.com/bavla/cluRC/raw/refs/heads/master/data/psy/SomeTyNet.rds"
+> disFile <- "https://github.com/bavla/cluRC/raw/refs/heads/master/data/psy/SomeTyDis.rds"
+> N <- readRDS(file=url(netFile)); D <- readRDS(file=url(disFile))
 > # tolerant
 > r <- cluRCdist(N,D)
 > plot(r,hang=-1,cex=1.5,main="Some types: tolerant max")
