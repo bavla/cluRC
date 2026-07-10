@@ -95,6 +95,20 @@ Method: max   Strategy: tolerant
 
 <img width="800" alt="Eu80netC6" src="https://github.com/user-attachments/assets/fc7b4e01-3bcf-42d8-a908-38d74c9f96d2" />
 
+```
+> r$labels <- V(N)$ISOa2
+> t <- transTree(r,type="count")
+> plot(t,hang=-1,main="Eu 1980 / RC tolerant max / count")
+> tc <- cutree(t,k=6)
+> plot(N,vertex.size=14,vertex.label.cex=1,vertex.color=cols[tc],edge.width=3)
+> printClu(t,tc)
+1 : AL 
+2 : AT CS HU IT PL SU 
+3 : BE FR DD DE LU NL CH GB 
+4 : BG GR RO YU 
+5 : DK FI IS NO SE 
+6 : IE PT ES 
+```
 
 <hr />
 
