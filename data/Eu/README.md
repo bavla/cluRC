@@ -79,9 +79,24 @@ Method: max   Strategy: tolerant
 <img width="846" alt="Eu80RCtolMax" src="https://github.com/user-attachments/assets/9e68c07e-905b-4e85-ac7b-73ea2fdc75be" />
  
 ```
- 
+> library(paletteer)
+> cols <- as.vector(paletteer_d("RColorBrewer::Set2"))
+> V(N)$name <- V(N)$ISOa2
+> plot(N,vertex.size=8,vertex.label.cex=2,vertex.color=cols[tc])
+> plot(N,vertex.size=14,vertex.label.cex=1,vertex.color=cols[tc],edge.width=3)
+> plot(t,hang=-1,main="Eu 1980 / RC tolerant max / count")
+> printClu(t,tc)
+1 : Albania 
+2 : Austria Czechoslovakia Hungary Italy Poland USSR 
+3 : Belgium France East_Germany West_Germany Luxembourg Netherlands Switzerland United_Kingdom 
+4 : Bulgaria Greece Romania Yugoslavia 
+5 : Denmark Finland Iceland Norway Sweden 
+6 : Ireland Portugal Spain  
 ```
- 
+
+<img width="837" alt="Eu80RCtolMaxC" src="https://github.com/user-attachments/assets/a1dea464-704d-4899-8a28-b0110b7f5bba" />
+
+<img width="800" alt="Eu80netC6" src="https://github.com/user-attachments/assets/fc7b4e01-3bcf-42d8-a908-38d74c9f96d2" />
 
 
 <hr />
