@@ -7,5 +7,5 @@ http://localhost:8800/doku.php?id=ru:7iss:labs:rc
 
 <hr />
 
-[cluRC](../README.md)
+[cluRC](./README.md)
 
