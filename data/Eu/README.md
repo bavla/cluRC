@@ -109,6 +109,24 @@ Method: max   Strategy: tolerant
 5 : DK FI IS NO SE 
 6 : IE PT ES 
 ```
+Shapefiles for historical borders are difficult to find. I found a collection [[https://github.com/interactivethings/historical-world-atlas|Historical world atlas]] on GitHub. For the year 1980 the closest map in the collection is for the year 1945 (on which Istria is still part of Italy). Another problem is that the .prj file is missing. After some attempts I found an .prj file that works.
+
+```
+> P <- st_read("C:/Users/vlado/docs/papers/2026/ifcs/slides/eu/cntry1945.shp")
+> AN <- P$ABBREVNAME; NN <- V(N)$country
+> NN[5] <- "Czechoslovak"; NN[9] <- "E. Germany" 
+> NN[10] <- "Germany"; NN[26] <- "UK" 
+> p <- match(NN,AN)
+> P$Clustering <- 0; P$Clustering[p] <- tc
+> cols <- c("lightcyan",as.vector(paletteer_d("RColorBrewer::Set2")))
+> bb <- st_bbox(c(xmin = -30, ymin = 31, xmax = 50, ymax = 75),crs = 4326)
+> tm_shape(P, bbox = bb) +
++   tm_polygons("Clustering",tm_scale_categorical(values=cols),
++   fill.legend = tm_legend(position = tm_pos_in("left", "bottom")) ) +
++   tm_title_out("Eu 1980 / RC tolerant max / count",
++     position = tm_pos_out("center", "top")) 
+```
+<img width="801" alt="Eu80RCtolMaxCmap" src="https://github.com/user-attachments/assets/e9fae711-89cc-4144-aef5-3fdd65cabb53" />
 
 <hr />
 
