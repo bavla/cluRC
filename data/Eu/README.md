@@ -32,7 +32,7 @@ Add ISO alpha-2 country codes to the The Hammond Almanac 1980 European countries
 > write.csv2(E,file="EuropePsy.csv")
 ```
 
-Combine the geographical neighbors graph and European countries' data into a igraph network.
+Combine the geographical neighbors graph and European countries' data into an igraph network.
 ```
 > library(igraph)
 > netFile <- "https://github.com/bavla/cluRC/raw/refs/heads/master/data/Eu/EuropePsy.net"
