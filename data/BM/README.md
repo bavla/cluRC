@@ -79,7 +79,7 @@ showClu <- function(cl){
 > # inspect selected clustering
 > showClu(3)
 ```
- <img width="839" alt="Cluster4" src="https://github.com/user-attachments/assets/f3bcd3b9-4335-408c-bd24-a5f2728eb5cf" />
+ <img width="600" alt="Cluster4" src="https://github.com/user-attachments/assets/f3bcd3b9-4335-408c-bd24-a5f2728eb5cf" />
 
  
 ```
