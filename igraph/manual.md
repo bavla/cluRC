@@ -13,6 +13,19 @@
 
 ## derivedTree(R,type='rank')
 
+## transTree(t,type="rank")
+
+## listClu(t,tc)
+
+## printClu(t,tc)
+
+## push(S,input), pop(S)
+Stack operation on a list S.
+
+## orDendro(m)
+
+## showClu(cl)
+
 ```
  
 ```
