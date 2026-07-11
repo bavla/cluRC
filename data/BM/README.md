@@ -51,7 +51,7 @@ showClu <- function(cl){
      Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
 0.0000116 0.0018382 0.0046296 0.0085531 0.0096154 2.8788444 
 > N <- simplify(N) # remove loops
-> N <- delete.edges(N, which(E(N)$weight<0.05))
+> N <- delete_edges(N, which(E(N)$weight<0.05))
 > N <- delete_vertices(N, which(degree(N)==0))
 > vcount(N)
 > E(N)$cite <- E(N)$weight
