@@ -83,13 +83,18 @@ showClu <- function(cl){
 > tk_close(Pt)
 > V(C)$x <- coor[,1]; V(C)$y <- coor[,2]
 > saveRDS(C,file="AciA-4.rds")
- 
 ```
  
 ```
- 
+> C <- readRDS(file="AciA-4.rds")
+> plot(C,vertex.size=10,vertex.label.cex=0.6,edge.width=10*E(C)$weight,
++     main=paste0("ACiAn cluster 4")) 
 ```
- 
+<img width="500" alt="ACiAnCluster4" src="https://github.com/user-attachments/assets/fc951eda-438f-4cce-accd-7f0185eea596" />
+<img width="500" alt="ACiAnCluster7" src="https://github.com/user-attachments/assets/deec2f65-6c2c-4e90-9ab8-1746353c5fa1" />
+
+<img width="500" alt="ACiAnCluster13" src="https://github.com/user-attachments/assets/2aed7f60-7e35-4482-8b9e-9ea8313a6e3d" />
+<img width="500" alt="ACiAnCluster14" src="https://github.com/user-attachments/assets/1a294e3f-110e-4ea1-81fa-d50292a45dec" />
 
 
 <hr />
