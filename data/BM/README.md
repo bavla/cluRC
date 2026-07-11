@@ -106,6 +106,17 @@ showClu <- function(cl){
 <img width="500" alt="ACiAnCluster14" src="https://github.com/user-attachments/assets/1a294e3f-110e-4ea1-81fa-d50292a45dec" />
 
 
+```
+level       n      m
+0.0     62143 642419
+0.005   46938 300791 
+0.01    32660 153948
+0.02    18495  56925 
+0.025   14688  39242
+0.03    11621  27358 
+0.05     5943  10564
+```
+
 <hr />
 
 [Datasets](../README.md), [cluRC](../../README.md)
