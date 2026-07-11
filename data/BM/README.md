@@ -59,6 +59,23 @@ showClu <- function(cl){
 > wmax <- 1.01*max(E(N)$weight)
 > E(N)$weight <- 1 - E(N)$weight/wmax
 > r <- cluRCnet(N,strategy="leader",step=100)
+Clustering with relational constraint based on a dictionary
+by Vladimir Batagelj, March 2018 / July 2026
+Method: max   Strategy: leader 
+[1] "Started: 2026-07-10 20:56:16.17524"
+Fri Jul 10 20:56:55 2026 dictionary
+Fri Jul 10 20:56:56 2026 out neighbors
+Fri Jul 10 20:56:58 2026 in neighbors
+Fri Jul 10 20:57:05 2026  n = 100 
+Fri Jul 10 20:57:12 2026  n = 200 
+Fri Jul 10 20:57:19 2026  n = 300 
+Fri Jul 10 20:57:25 2026  n = 400
+...
+Fri Jul 10 20:58:47 2026  n = 2600 
+Fri Jul 10 20:58:47 2026  n = 2700 
+several components 2732 3 Inf 
+Create clustering
+[1] "Finished: 2026-07-10 20:58:47.797469"
 > E(N)$weight <- E(N)$cite
 
 > n <- length(r$order)
