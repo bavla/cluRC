@@ -17,14 +17,9 @@
 > saveRDS(N,file="ACiAnNet.rds")
 ```
 ## Removing loops and converting weight to dissimilarity
+
 ```
-> N <- simplify(N) # remove loops
-> E(N)$cite <- E(N)$weight
-> summary(E(N)$weight)
-     Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
-0.0000116 0.0018215 0.0045662 0.0083398 0.0095238 2.0000000 
-> wmax <- max(E(N)$weight)
-> E(N)$weight <- 1 - E(N)$weight/wmax
+> N <- readRDS(file="ACiAnNet.rds")
 > N
 IGRAPH a2e04d6 DNW- 62143 642419 -- cluRC example from Clustering and blockmodeling
 + attr: name (g/c), ref (g/c), by (g/c), date (g/c), id (v/c), name (v/c), x
@@ -33,20 +28,6 @@ IGRAPH a2e04d6 DNW- 62143 642419 -- cluRC example from Clustering and blockmodel
  [1] [ANONYMO_ ->SMITHSON_F HARRASSO_H->SMITHSON_F FORBES_M  ->GESELL_A  
  [4] THOMPSON_W->BOSE_R     THOMPSON_W->CLATWORT_W THOMPSON_W->CONNOR_W  
 + ... omitted several edges
-```
-## Analysis
-
-```
-showClu <- function(cl){
-  C <- delete_vertices(N, which(V(N)$p!=cl))
-  xy <- layout_with_fr(C)
-  plot(C,layout=xy,vertex.size=10,vertex.label.cex=0.6,edge.width=10*E(C)$weight,
-    main=paste0("Cluster ",cl))
-} 
-```
-
-```
-> N <- readRDS(file="ACiAnNet.rds")
 > summary(E(N)$weight)
      Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
 0.0000116 0.0018382 0.0046296 0.0085531 0.0096154 2.8788444 
@@ -76,7 +57,19 @@ several components 2732 3 Inf
 Create clustering
 [1] "Finished: 2026-07-10 20:58:47.797469"
 > E(N)$weight <- E(N)$cite
+```
 
+## Analysis
+
+```
+showClu <- function(cl){
+  C <- delete_vertices(N, which(V(N)$p!=cl))
+  xy <- layout_with_fr(C)
+  plot(C,layout=xy,vertex.size=10,vertex.label.cex=0.6,edge.width=10*E(C)$weight,
+    main=paste0("Cluster ",cl))
+} 
+```
+```
 > n <- length(r$order)
 > rC <- varCutree(r,rep(1,n),10,60)
 > V(N)$p <- rC$part
