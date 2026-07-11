@@ -70,10 +70,48 @@ printClu <- function(t,tc){
   for(i in 1:length(L)) cat(i,":",names(L[[i]]),"\n")
 }
 
+# July 10, 2026 - iterative version of orDendro
+
+# https://stackoverflow.com/questions/28687806/a-better-way-to-push-and-pop-to-from-lists-in-r
+
+push <- function(obj, input) {
+  variable <- deparse(substitute(obj))
+  out <- get(variable, envir = parent.frame(n=2))
+  out[[length(out)+1]] <- input
+  assign(variable, out, envir = parent.frame(n=2))
+}
+
+pop <- function(obj) {
+  variable <- deparse(substitute(obj))
+  obj <- get(variable, envir = parent.frame(n=2))
+  if (length(obj) > 0) {
+    out <- obj[[length(obj)]]
+    assign(variable, obj[-length(obj)], envir = parent.frame(n=2))
+  }else{
+    out <- NULL
+    assign(variable, out, envir = parent.frame(n=2))
+  }
+  return(out)
+}
+
+orDendro <- function(m){ nm <- nrow(m)
+  S <- list(); p <- rep(0,nm+1); k <- 0; push(S,nm)
+  for(i in 1:nm){ j <- pop(S); L <- m[j,1]; R <- m[j,2]
+    if(L<0) {k <- k+1; p[k] <- -L} else push(S,L)
+    if(R<0) {k <- k+1; p[k] <- -R} else push(S,R)
+  }
+  return(p)
+}
+
+showClu <- function(cl){
+  C <- delete_vertices(N, which(V(N)$p!=cl))
+  xy <- layout_with_fr(C)
+  plot(C,layout=xy,vertex.size=10,vertex.label.cex=0.6,
+    edge.width=10*E(C)$weight,main=paste0("Cluster ",cl))
+}
+
 # Clustering with relational constraint based on the class dist
 cluRCdist <- function(N,D,method="max",strategy="tolerant"){
-  orDendro <- function(i){if(i<0) return(-i)
-    return(c(orDendro(m[i,1]),orDendro(m[i,2])))}
   idx <- function(i,j) {if (i<j) return(n*(i-1) - i*(i-1)/2 + j-i) else
     return(n*(j-1) - j*(j-1)/2 + i-j)}
   if(strategy %in% c("tolerant", "leader", "strict")){
@@ -147,7 +185,7 @@ cluRCdist <- function(N,D,method="max",strategy="tolerant"){
     }
     w[p] <- w[q]+w[p]; node[[p]] <- k
   }
-  hc <- list(merge=m,height=h,order=orDendro(numLm),labels=attr(D,"Labels"),
+  hc <- list(merge=m,height=h,order=orDendro(m),labels=attr(D,"Labels"),
     method="cluRelD",call=NULL,dist.method=method,leaders=NULL)
   class(hc) <- "hclust"
   print(paste("Finished:",Sys.time()))
@@ -156,8 +194,6 @@ cluRCdist <- function(N,D,method="max",strategy="tolerant"){
 
 # Clustering with relational constraint based on a network
 cluRCnet <- function(N,method="max",strategy="tolerant",step=0){
-  orDendro <- function(i){if(i<0) return(-i)
-    return(c(orDendro(m[i,1]),orDendro(m[i,2])))}
   key <- function(i,j)
     if(i<j) return(as.character(i*np+j)) else return(as.character(j*np+i))
   if(strategy %in% c("tolerant", "leader", "strict")){
@@ -172,16 +208,19 @@ cluRCnet <- function(N,method="max",strategy="tolerant",step=0){
   for(i in 1:ecount(N)) {e <- ends(N,i,names=FALSE)[1,]
     assign(key(e[1],e[2]),E(N)$weight[i],envir=hD)}
   attr(hD,"Size") <- n; attr(hD,"Labels") <- V(N)$name
+  if(step>0) {cat(date(),"dictionary\n"); flush.console()}
   Ro <- neighborhood(N,order=1,mode="out",V(N))
   Ri <- neighborhood(N,order=1,mode="in",V(N))
   for(i in 1:length(Ro)) { li <- length(Ro[[i]])
     if(li<=1) Ro[[i]] <- 0 else Ro[[i]] <- as.vector(Ro[[i]][2:li]) }
+  if(step>0) {cat(date(),"out neighbors\n"); flush.console()}
   for(i in 1:length(Ri)) { li <- length(Ri[[i]])
     if(li<=1) Ri[[i]] <- 0 else Ri[[i]] <- as.vector(Ri[[i]][2:li]) }
+  if(step>0) {cat(date(),"in neighbors\n"); flush.console()}
 # each unit is a cluster; compute inter-cluster dissimilarity matrix
   numL <- attr(hD,"Size"); numLm <- numL-1
   active <- 1:numL; m <- matrix(nrow=numLm,ncol=2)
-  node <- rep(0,numL); h <- numeric(numLm); w <- rep(1,numL)
+  node <- rep(0,numL); h <- rep(Inf,numLm); w <- rep(1,numL)
   for(k in 1:numLm){
     if(step>0) if(k %% step==0) {cat(date()," n =",k,"\n"); flush.console()}
   # determine the closest pair of clusters (p,q)
@@ -196,7 +235,7 @@ cluRCnet <- function(N,method="max",strategy="tolerant",step=0){
   # join the closest pair of clusters
     p<-active[pq]; q <- ind[pq];
     if(is.infinite(q)){
-      cat("several components\n")
+      cat("several components",k,p,q,"\n"); flush.console()
       dpq <- h[k-1]*1.1; p <- active[1]
       for(q in active[2:length(active)]){
         if(node[p]==0) m[k,1] <- -p else m[k,1] <- node[p]
@@ -242,8 +281,9 @@ cluRCnet <- function(N,method="max",strategy="tolerant",step=0){
       if(exists(ky,envir=hD,inherits=FALSE)) remove(list=ky,envir=hD,inherits=FALSE)}
     w[p] <- w[q]+w[p]; node[[p]] <- k
   }
-  hc <- list(merge=m,height=h,order=orDendro(numLm),labels=attr(hD,"Labels"),
-    method="cluRelH",call=NULL,dist.method=method,leaders=NULL)
+  cat("Create clustering\n"); flush.console()
+  hc <- list(merge=m,height=h,order=orDendro(m),labels=attr(hD,"Labels"),
+    method="cluRCnet",call=NULL,dist.method=method,leaders=NULL)
   class(hc) <- "hclust"
   print(paste("Finished:",Sys.time()))
   return(hc)
