@@ -6,7 +6,7 @@
     * Short papers: Submission 18 January 2026
     * Abstract: Submission 15 March 2026
     * [Program](https://drive.google.com/file/d/1tTfaqOz_O7EEVeKyrPlxHYE1fm7t-0ho/view)
-  * Batagelj V: ([PDF](../doc/IFCS2026_VB_abs.pdf))
+  * Batagelj, V: cluRC - clustering with relational constraint using R ([PDF](../doc/IFCS2026_VB_abs.pdf))
 
 ```
  
