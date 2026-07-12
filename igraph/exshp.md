@@ -190,7 +190,7 @@ IGRAPH 8de3d89 UNW- 107 238 -- Italian provinces 2017-2025
 <img width="830" height="822" alt="ItalyIgraph2" src="https://github.com/user-attachments/assets/c66e8574-c00d-4b92-86d7-65a42ec1ecca" />
 
 
- 
+The graph is not connected. We manually add some edges to make it connected. 
 ```
 > N <- set_edge_attr(N,"color",value="red")
 > N <- add_edges(N,c(
