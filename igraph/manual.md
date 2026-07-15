@@ -5,12 +5,12 @@
 ## cluRCdist(N,D,method="max",strategy="tolerant")
 Hierarchical clustering with a relational constraint network N (igraph) on a smaller set (up to some hundreds) of units, using a complete dissimilarity matrix D (dist).
 method ∈ { "max", "min", "average", "ward" };
-strategy ∈ { "tolerant", "leader", "strict" }.
+strategy ∈ { "tolerant", "leader", "strict" }. [Example](./exdist.md)
 
 ## cluRCnet(N,method="max",strategy="tolerant",step=0)
 Hierarchical clustering with a relational constraint network N (igraph) on a larger set of units; the dissimilarity between units is provided as the weight of links.
 method ∈ { "max", "min", "average", "ward" };
-strategy ∈ { "tolerant", "leader", "strict" }.
+strategy ∈ { "tolerant", "leader", "strict" }. [Example](./exdist.md)
 
 For larger networks (tens of thousands of nodes) the computation can take several hours. To track the execution, include the step parameter (e.g. step=100) - every k*step iteration prints a message.
 
