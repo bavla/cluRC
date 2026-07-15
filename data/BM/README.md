@@ -138,6 +138,7 @@ IGRAPH fa6d017 DNW- 62139 644285 -- cluRC example from Clustering and blockmodel
 > N
 IGRAPH 2bdb3bc DNW- 62139 640037 -- cluRC example from Clustering and blockmodeling
 > saveRDS(N,file="ACiAnNetC.rds")
+```
 
 ## Analysis of network ACiAn cut at level 0.01
 
