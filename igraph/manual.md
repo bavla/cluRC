@@ -27,14 +27,15 @@ For a given clustering t and partition tc, it creates a list of vectors with the
 ## printClu(t,tc)
 Prints a list of clusters created with the listClu function.
 
-## push(S,input), pop(S)
-Stack operation on a list S.
-
 ## orDendro(m)
 Determines the ordering of units that is compatible with the given clustering tree m.
 
 ## showClu(cl)
 Displays an image of a subgraph of graph N induced by the cluster cl of the partition p.
+
+## push(S,input), pop(S)
+Stack operation on a list S.
+
 
  
 
