@@ -7,7 +7,7 @@ Hierarchical clustering with a relational constraint network N (igraph) on a sma
 method ∈ { "max", "min", "average", "ward" };
 strategy ∈ { "tolerant", "leader", "strict" }.
 
-## cluRCnet(N,method="max",strategy="tolerant")
+## cluRCnet(N,method="max",strategy="tolerant",step=0)
 Hierarchical clustering with a relational constraint network N (igraph) on a larger set of units; the dissimilarity between units is provided as the weight of links.
 method ∈ { "max", "min", "average", "ward" };
 strategy ∈ { "tolerant", "leader", "strict" }.
