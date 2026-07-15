@@ -3,7 +3,7 @@
 
 ## Converting ACiAn network from Pajek to igraph format
 ```
-> setwd("C:/Users/vlado/DL/data/italy")
+> setwd("C:/data/italy")
 > source("https://raw.githubusercontent.com/bavla/cluRC/refs/heads/master/igraph/cluRC.R")
 > library(igraph)
 
@@ -62,14 +62,6 @@ Create clustering
 ## Analysis
 
 ```
-showClu <- function(cl){
-  C <- delete_vertices(N, which(V(N)$p!=cl))
-  xy <- layout_with_fr(C)
-  plot(C,layout=xy,vertex.size=10,vertex.label.cex=0.6,edge.width=10*E(C)$weight,
-    main=paste0("Cluster ",cl))
-} 
-```
-```
 > n <- length(r$order)
 > rC <- varCutree(r,rep(1,n),10,60)
 > V(N)$p <- rC$part
@@ -77,7 +69,7 @@ showClu <- function(cl){
      0      1      2      3      4      6      7      8      9     10     11     12     13     14     31 999999 
   2652     60     60     60     22     15     16     10     10     10     10     10     25     34     60   2889
 > # inspect selected clustering
-> showClu(3)
+> showClu(N,p,3)
 ```
  <img width="600" alt="Cluster4" src="https://github.com/user-attachments/assets/f3bcd3b9-4335-408c-bd24-a5f2728eb5cf" />
 
@@ -116,6 +108,91 @@ level       n      m
 0.03    11621  27358 
 0.05     5943  10564
 ```
+
+## Removing unknown and anonymous nodes
+
+```
+> setwd("C:/data/italy")
+> source("https://raw.githubusercontent.com/bavla/cluRC/refs/heads/master/igraph/cluRC.R")
+> library(igraph)
+> N <- readRDS(file="ACiAnNet.rds")
+> N
+IGRAPH 697a916 DNW- 62143 646667 -- cluRC example from Clustering and blockmodeling
+ [1] [ANONYMO_ ->SMITHSON_F HARRASSO_H->SMITHSON_F FORBES_M  ->GESELL_A   THOMPSON_W->THOMPSON_W
+> L <- names(V(N))
+> r <- grepl("UNKNOW",L)
+> which(r)
+[1]   369 19755
+> L[which(r)]
+[1] "UNKNOWN"             "PLANT UNKNOWN EOME "
+> a <- grepl("ANONYM",L)
+>  which(a)
+[1]   1 958
+> L[which(a)]
+[1] "[ANONYMO_" "[ANONYMO" 
+> N <- delete_vertices(N,c(1,958,369,19755))
+> N
+IGRAPH fa6d017 DNW- 62139 644285 -- cluRC example from Clustering and blockmodeling
+ [1] HARRASSO_H->SMITHSON_F FORBES_M  ->GESELL_A   THOMPSON_W->THOMPSON_W THOMPSON_W->BOSE_R    
+> N <- simplify(N) # remove loops
+> N
+IGRAPH 2bdb3bc DNW- 62139 640037 -- cluRC example from Clustering and blockmodeling
+> saveRDS(N,file="ACiAnNetC.rds")
+
+## Analysis of network ACiAn cut at level 0.01
+
+```
+> N <- delete_edges(N, which(E(N)$weight<0.01))
+> N <- delete_vertices(N, which(degree(N)==0))
+> N
+IGRAPH 517a4d1 DNW- 32640 152556 -- cluRC example from Clustering and blockmodeling
+> E(N)$cite <- E(N)$weight
+> wmax <- 1.01*max(E(N)$weight)
+> E(N)$weight <- 1 - E(N)$weight/wmax
+> r <- cluRCnet(N,strategy="leader",step=200)
+Clustering with relational constraint based on a dictionary
+by Vladimir Batagelj, March 2018 / July 2026
+Method: max   Strategy: leader 
+[1] "Started: 2026-07-13 14:59:12.645533"
+Mon Jul 13 19:16:58 2026 dictionary
+Mon Jul 13 19:17:25 2026 out neighbors
+Mon Jul 13 19:18:47 2026 in neighbors
+Mon Jul 13 19:22:27 2026  n = 200 
+Mon Jul 13 19:26:17 2026  n = 400 
+Mon Jul 13 19:30:00 2026  n = 600 
+Mon Jul 13 19:33:46 2026  n = 800 
+...
+> Mon Jul 13 20:41:33 2026  n = 8200 
+Mon Jul 13 20:41:52 2026  n = 8400 
+Mon Jul 13 20:42:06 2026  n = 8600 
+Mon Jul 13 20:42:18 2026  n = 8800 
+several components 8995 2 Inf 
+Create clustering
+[1] "Finished: 2026-07-13 20:42:30.111791"
+> saveRDS(r,file="ACiAn01dendro.rds")
+> E(N)$weight <- E(N)$cite
+> n <- length(r$order)
+> rC <- varCutree(r,rep(1,n),10,60)
+> V(N)$p <- rC$part
+> table(rC$part)
+     0      1      2      3      4      5      6      7      9     10     11     12     13     14 
+  8426     60     60     46     36     12     44     51     11     10     13     10     14     48 
+    15     16     17     18     19     20     21     22     23     24     25     56 999999 
+    11     19     10     10     15     25     11     11     12     10     17     60  23588 
+> showClu(N,1)
+> showClu(N,2)
+```
+
+ 
+```
+```
+ 
+```
+```
+ 
+```
+
+
 
 <hr />
 
