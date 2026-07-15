@@ -19,7 +19,7 @@
 ## Removing loops and converting weight to dissimilarity
 
 ```
-> N <- readRDS(file="ACiAnNet.rds")
+> N <- readRDS(file=url("https://github.com/bavla/cluRC/raw/refs/heads/master/data/BM/ACiAnNet.rds"))
 > N
 IGRAPH a2e04d6 DNW- 62143 642419 -- cluRC example from Clustering and blockmodeling
 + attr: name (g/c), ref (g/c), by (g/c), date (g/c), id (v/c), name (v/c), x
@@ -142,6 +142,8 @@ IGRAPH 2bdb3bc DNW- 62139 640037 -- cluRC example from Clustering and blockmodel
 ## Analysis of network ACiAn cut at level 0.01
 
 ```
+> N <- readRDS(file=url("https://github.com/bavla/cluRC/raw/refs/heads/master/data/BM/ACiAnNetC.rds"))
+> N
 > N <- delete_edges(N, which(E(N)$weight<0.01))
 > N <- delete_vertices(N, which(degree(N)==0))
 > N
@@ -182,15 +184,18 @@ Create clustering
 > showClu(N,1)
 > showClu(N,2)
 ```
+<img width="500" alt="ACiAn01Cluster13" src="https://github.com/user-attachments/assets/e57f8762-f9b5-4a8c-8ff0-ce42dc367c9b" />
+<img width="500" alt="ACiAn01Cluster50" src="https://github.com/user-attachments/assets/a73db5fd-fd3b-4d16-963d-ac580fb9f14c" />
 
+<img width="500" alt="ACiAn01Cluster34" src="https://github.com/user-attachments/assets/c6aeacfd-f220-458a-a646-c86a8a23270b" />
+<img width="500" alt="ACiAn01Cluster31" src="https://github.com/user-attachments/assets/7f132790-d107-4a52-a787-45e567fde7c2" />
+
+<img width="500" alt="ACiAn01Cluster4" src="https://github.com/user-attachments/assets/f6749874-508f-4ef5-a2cc-8b080eceb9b8" />
+<img width="500" alt="ACiAn01Cluster52" src="https://github.com/user-attachments/assets/d42b79d4-ef50-483c-b4b8-91e2996bd379" />
  
 ```
 ```
  
-```
-```
- 
-```
 
 
 
