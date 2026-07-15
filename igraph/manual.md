@@ -35,24 +35,7 @@ Determines the ordering of units that is compatible with the given clustering tr
 
 ## showClu(cl)
 Displays an image of a subgraph of graph N induced by the cluster cl of the partition p.
-```
- 
-```
-```
- 
-```
- 
-```
- 
-```
- 
-```
- 
-```
- 
-```
- 
-```
+
  
 
 <hr />
