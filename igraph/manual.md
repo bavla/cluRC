@@ -34,7 +34,7 @@ Determines the ordering of units that is compatible with the given clustering tr
 Displays an image of a subgraph of graph N induced by the cluster cl of the partition p.
 
 ## push(S,input), pop(S)
-Stack operation on a list S.
+Stack operations on a list S.
 
 
  
