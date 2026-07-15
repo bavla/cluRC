@@ -11,8 +11,8 @@
 
 ## cluRCdist(N,D,method="max",strategy="tolerant")
 Hierarchical clustering with a relational constraint network N (igraph) on a smaller set (up to some hundreds) of units, using a complete dissimilarity matrix D (dist).
-method $\in \{$ "max", "min", "average", "ward" $\}$;
-strategy $\in \{$ "tolerant", "leader", "strict" $\}$.
+method $\in $ { "max", "min", "average", "ward" };
+strategy $\in $ { "tolerant", "leader", "strict" }.
 
 ## cluRCnet(N,method="max",strategy="tolerant")
 Hierarchical clustering with a relational constraint network N (igraph) on a larger set of units; the dissimilarity between units is provided as the weight of links.
