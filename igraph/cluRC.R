@@ -3,7 +3,8 @@
 # by Vladimir Batagelj
 #
 # source("https://raw.githubusercontent.com/bavla/cluRC/refs/heads/master/igraph/cluRC.R")
-# library(igraph); library(sf); library(tmap); library(spdep); library(pals)
+# library(igraph)
+# library(sf); library(tmap); library(spdep); library(pals); library(paletteer)
 
 
 varCutree <- function(R,var,vmin,vmax){
@@ -71,7 +72,6 @@ printClu <- function(t,tc){
 }
 
 # July 10, 2026 - iterative version of orDendro
-
 # https://stackoverflow.com/questions/28687806/a-better-way-to-push-and-pop-to-from-lists-in-r
 
 push <- function(obj, input) {
@@ -94,6 +94,8 @@ pop <- function(obj) {
   return(out)
 }
 
+S <- list()
+
 orDendro <- function(m){ nm <- nrow(m)
   S <- list(); p <- rep(0,nm+1); k <- 0; push(S,nm)
   for(i in 1:nm){ j <- pop(S); L <- m[j,1]; R <- m[j,2]
@@ -103,7 +105,7 @@ orDendro <- function(m){ nm <- nrow(m)
   return(p)
 }
 
-showClu <- function(cl){
+showClu <- function(N=N,cl=1){
   C <- delete_vertices(N, which(V(N)$p!=cl))
   xy <- layout_with_fr(C)
   plot(C,layout=xy,vertex.size=10,vertex.label.cex=0.6,
@@ -120,6 +122,7 @@ cluRCdist <- function(N,D,method="max",strategy="tolerant"){
   cat("Clustering with relational constraint based on the class dist\n")
   cat("by Vladimir Batagelj, March 2018 / July 2026\n")
   cat("Method:",method,"  Strategy:",strategy,"\n")
+  if(method=="average"){cat("*** Sorry, average method is not implemented yet\n"); return(NULL)}
   if(class(D)!="dist"){cat("*** Error - D should be of class dist\n"); return(NULL)}
   print(paste("Started:",Sys.time()))
 # each unit is a cluster; compute inter-cluster dissimilarity matrix
@@ -202,6 +205,8 @@ cluRCnet <- function(N,method="max",strategy="tolerant",step=0){
   cat("Clustering with relational constraint based on a dictionary\n")
   cat("by Vladimir Batagelj, March 2018 / July 2026\n")
   cat("Method:",method,"  Strategy:",strategy,"\n")
+  if(method=="average"){cat("*** Sorry, average method is not implemented yet\n"); return(NULL)}
+  if(method=="ward"){cat("*** Sorry, ward method is not implemented yet\n"); return(NULL)}
   print(paste("Started:",Sys.time())); flush.console()
 # network -> dict
   hD <- new.env(); n <- vcount(N); np <- n+1
