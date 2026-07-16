@@ -44,6 +44,7 @@ rc
 ```
 <img width="839" alt="ITdistCut16" src="https://github.com/user-attachments/assets/42866ce7-d9b6-4036-8653-37ed5d8ff350" />
 
+## Trasforming the tree
 ```
 > t <- transTree(r,type="rank")
 > plot(t,hang=-1,cex=0.6,main="BES 2022 / RC tolerant max / rank",lwd=1.2)
