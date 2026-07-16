@@ -97,7 +97,7 @@ Create clustering
 <img width="500" alt="ACiAnCluster13" src="https://github.com/user-attachments/assets/2aed7f60-7e35-4482-8b9e-9ea8313a6e3d" />
 <img width="500" alt="ACiAnCluster14" src="https://github.com/user-attachments/assets/1a294e3f-110e-4ea1-81fa-d50292a45dec" />
 
-
+## Sizes of cuts at different levels
 ```
 level       n      m
 0.0     62143 642419
