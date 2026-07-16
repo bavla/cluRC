@@ -21,17 +21,17 @@ An improved version of the cutree function, which, given a clustering R (hclust)
 ## transTree(t,type="rank")
 Converts the clustering t according to the selected type ∈ { "count", "rank", "total" } by appropriately changing the heights (using the derivedTree helper function) and the order of the units, but preserving the tree structure.
 
-## listClu(t,tc)
-For a given clustering t and partition tc, it creates a list of vectors with the names of the units belonging to each cluster.
-
 ## printClu(t,tc)
 Prints a list of clusters created with the listClu function.
+
+## showClu(N,cl)
+Displays an image of a subgraph of graph N induced by the cluster cl of the partition V(N)$p.
 
 ## orDendro(m)
 Determines the ordering of units that is compatible with the given clustering tree m.
 
-## showClu(N,cl)
-Displays an image of a subgraph of graph N induced by the cluster cl of the partition V(N)$p.
+## listClu(t,tc)
+For a given clustering t and partition tc, it creates a list of vectors with the names of the units belonging to each cluster.
 
 ## push(S,input), pop(S)
 Stack operations on a list S.
