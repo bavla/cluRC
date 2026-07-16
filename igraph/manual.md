@@ -19,7 +19,7 @@ An improved version of the cutree function, which, given a clustering R (hclust)
 [Example](./exdist.md#varcutree)
 
 ## transTree(t,type="rank")
-Converts the clustering t according to the selected type ∈ { "count", "rank", "total" } by appropriately changing the heights (using the derivedTree helper function) and the order of the units, but preserving the tree structure.
+Converts the clustering t according to the selected type ∈ { "count", "rank", "total" } by appropriately changing the heights (using the derivedTree helper function) and the order of the units, but preserving the tree structure.     [Example](./exdist.md#trasforming-the-tree)
 
 ## printClu(t,tc)
 Prints a list of clusters created with the listClu function.
