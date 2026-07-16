@@ -185,6 +185,32 @@ Create clustering
 > showClu(N,1)
 > showClu(N,2)
 ```
+### Using cutree
+
+```
+> rt <- cutree(r,k=1000)
+> t <- table(rt)
+> rt[rt %in% which(t<=10)] <- 9999
+> rC <- as.integer(factor(rt))
+> names(rC) <- names(rt)
+> table(rC)
+> V(N)$p <- rC
+
+> showClu(N,40)
+
+> cl <- 40
+> C <- delete_vertices(N, which(V(N)$p!=cl))
+> C <- delete_vertex_attr(delete_vertex_attr(C,"x"),"y")
+> Pt <- tkplot(C,800,800,edge.curved=0,vertex.size=10,vertex.label.cex=0.6)
+> # tkplot window is still active
+> coor <- tk_coords(Pt,norm=F) # save new coordinates
+> tk_close(Pt)
+> V(C)$x <- coor[,1]; V(C)$y <- coor[,2]
+> saveRDS(C,file="AciA-01-40.rds")
+> plot(C,vertex.size=10,vertex.label.cex=0.6,edge.width=10*E(C)$weight,
++     arrow.size=0.8,main=paste0("ACiAn cluster 40"))
+```
+
 <img width="500" alt="ACiAn01Cluster13" src="https://github.com/user-attachments/assets/e57f8762-f9b5-4a8c-8ff0-ce42dc367c9b" />
 <img width="500" alt="ACiAn01Cluster50" src="https://github.com/user-attachments/assets/a73db5fd-fd3b-4d16-963d-ac580fb9f14c" />
 
@@ -194,8 +220,6 @@ Create clustering
 <img width="500" alt="ACiAn01Cluster4" src="https://github.com/user-attachments/assets/f6749874-508f-4ef5-a2cc-8b080eceb9b8" />
 <img width="500" alt="ACiAn01Cluster52" src="https://github.com/user-attachments/assets/d42b79d4-ef50-483c-b4b8-91e2996bd379" />
  
-```
-```
  
 
 
