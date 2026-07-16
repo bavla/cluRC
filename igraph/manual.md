@@ -10,7 +10,7 @@ strategy ∈ { "tolerant", "leader", "strict" }. [Example](./exdist.md)
 ## cluRCnet(N,method="max",strategy="tolerant",step=0)
 Hierarchical clustering with a relational constraint network N (igraph) on a larger set of units; the dissimilarity between units is provided as the weight of links.
 method ∈ { "max", "min", "average", "ward" };
-strategy ∈ { "tolerant", "leader", "strict" }. [Example](./exdist.md)
+strategy ∈ { "tolerant", "leader", "strict" }. [Example](https://github.com/bavla/cluRC/blob/master/data/BM/README.md#analysis-of-network-acian-cut-at-level-001)
 
 For larger networks (tens of thousands of nodes) the computation can take several hours. To track the execution, include the step parameter (e.g. step=100) - every k*step iteration prints a message.
 
@@ -30,8 +30,8 @@ Prints a list of clusters created with the listClu function.
 ## orDendro(m)
 Determines the ordering of units that is compatible with the given clustering tree m.
 
-## showClu(cl)
-Displays an image of a subgraph of graph N induced by the cluster cl of the partition p.
+## showClu(N,cl)
+Displays an image of a subgraph of graph N induced by the cluster cl of the partition V(N)$p.
 
 ## push(S,input), pop(S)
 Stack operations on a list S.
