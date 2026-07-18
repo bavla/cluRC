@@ -1,26 +1,6 @@
 # varCutree
 
-<img src="https://github.com/bavla/Nets/blob/master/netsWeight/workIP.jpg" width=100 />
-
-```
- 
-```
-```
- 
-```
- 
-```
- 
-```
- 
-```
- 
-```
- 
-```
- 
-```
- 
+  * [Italian provinces](https://github.com/bavla/cluRC/blob/master/igraph/exdist.md#varcutree) 
 
 <hr />
 
