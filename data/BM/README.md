@@ -16,7 +16,7 @@
 > N$date <- date()
 > saveRDS(N,file="ACiAnNet.rds")
 ```
-## Removing loops and converting weight to dissimilarity
+## Removing loops and links with weight < 0.05 and converting weight to dissimilarity
 
 ```
 > N <- readRDS(file=url("https://github.com/bavla/cluRC/raw/refs/heads/master/data/BM/ACiAnNet.rds"))
